@@ -2,6 +2,29 @@
 @use './breakpoints' as mixin;
 
 @mixin fluid() {
-  margin-left: calc(#{$page-padding-global} * -1);
-  margin-right: calc(#{$page-padding-global} * -1);
+	margin-left: calc(#{$page-padding-global} * -1);
+	margin-right: calc(#{$page-padding-global} * -1);
+}
+
+@mixin content() {
+	grid-column: 2 / span 10;
+	@include mixin.mobile {
+		grid-column: 1 / span 12;
+	}
+}
+
+@mixin blur() {
+	backdrop-filter: blur(0.4rem);
+	background-color: $color-primary-alpha-80;
+}
+
+@mixin blur_img() {
+	opacity: 0.5;
+	filter: grayscale(1);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
 }

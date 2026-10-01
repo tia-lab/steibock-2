@@ -4,6 +4,7 @@ import { useCursorInteraction } from '@/hooks'
 import clsx from 'clsx'
 import type { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 import {
 	Children,
 	type CSSProperties,
@@ -71,18 +72,6 @@ const getSlidesPerViewSize = (slidesPerView: number) => {
 
 	return `calc((100% + var(--slider-gap)) / ${safeSlidesPerView})`
 }
-
-const ArrowLeftIcon = () => (
-	<svg aria-hidden='true' fill='none' viewBox='0 0 24 24'>
-		<path d='M15 18l-6-6 6-6' stroke='currentColor' strokeLinecap='round' />
-	</svg>
-)
-
-const ArrowRightIcon = () => (
-	<svg aria-hidden='true' fill='none' viewBox='0 0 24 24'>
-		<path d='M9 6l6 6-6 6' stroke='currentColor' strokeLinecap='round' />
-	</svg>
-)
 
 export const Slider = ({
 	children,
@@ -218,15 +207,13 @@ export const Slider = ({
 							{controls
 								? (renderPrevious?.(renderContext) ?? (
 										<ButtonIcon
+											icon={<ArrowLeft />}
 											aria-label='Previous slide'
 											className={clsx($.control, classes?.control)}
 											disabled={!canScrollPrev}
 											onClick={scrollPrev}
-											size='medium'
 											type='button'
-											variant='outline'>
-											<ArrowLeftIcon />
-										</ButtonIcon>
+										/>
 									))
 								: null}
 
@@ -269,15 +256,13 @@ export const Slider = ({
 							{controls
 								? (renderNext?.(renderContext) ?? (
 										<ButtonIcon
+											icon={<ArrowRight />}
 											aria-label='Next slide'
 											className={clsx($.control, classes?.control)}
 											disabled={!canScrollNext}
 											onClick={scrollNext}
-											size='medium'
 											type='button'
-											variant='outline'>
-											<ArrowRightIcon />
-										</ButtonIcon>
+										/>
 									))
 								: null}
 						</>

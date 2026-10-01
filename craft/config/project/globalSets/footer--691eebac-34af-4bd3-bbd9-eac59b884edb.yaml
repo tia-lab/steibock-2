@@ -10,6 +10,22 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
+            fieldUid: 401dc823-8405-4c21-b627-b8bb67fbe474 # Introtext
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df2bd255-e10f-4736-b022-d5236166b9bf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
             fieldUid: d9af3711-15b0-40ad-b91a-a78c305be464 # Company Name
             handle: null
             instructions: null

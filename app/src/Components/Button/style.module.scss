@@ -61,6 +61,23 @@
 	}
 }
 
+.text {
+	padding: 0;
+	border-color: transparent;
+	background: transparent;
+	color: $color-white;
+
+	&:visited {
+		color: $color-white;
+	}
+
+	&:hover {
+		border-color: transparent;
+		background: transparent;
+		color: $color-accent-alpha-80;
+	}
+}
+
 .small {
 	padding: 0.7rem 1rem;
 	font-size: 0.75rem;

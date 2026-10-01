@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: accordions
+instructions: null
+name: Akkordeons
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 1f8f86e6-ab0e-49ab-88a4-cbcbe1af2d60 # Akkordeon
+        -
+          - group
+          - Akkordeons
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,19 @@
+columnSuffix: null
+handle: itemsPerPage
+instructions: '0 zeigt alle Einträge ohne Pagination.'
+name: 'Einträge pro Seite'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 6
+  max: 24
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  step: 1
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

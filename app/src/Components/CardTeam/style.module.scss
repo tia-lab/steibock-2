@@ -1,0 +1,44 @@
+@use '../../styles/export.scss' as *;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: flex-start;
+
+	.image_wrap {
+		@include object-fit-wrap;
+		width: 100%;
+		padding-top: 100%;
+		border: 1px solid $color-secondary;
+		isolation: isolate;
+
+		.image {
+			@include object-fit;
+			z-index: 0;
+			filter: grayscale(1);
+		}
+
+		.image_overlay {
+			position: absolute;
+			inset: 0;
+			z-index: 1;
+			background-color: $color-primary-alpha-80;
+			mix-blend-mode: color;
+			pointer-events: none;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.contact {
+		display: flex;
+		width: 100%;
+		gap: 1rem;
+		justify-content: flex-end;
+	}
+}

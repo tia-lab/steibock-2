@@ -1,24 +1,73 @@
 @use '../../styles/export.scss' as *;
 
 .footer {
-	padding: $space-section3 0;
-	margin: $space-section3 0 0 0;
-	background-color: $color-primary;
-	border-top: $color-secondary 1px solid;
+	padding: 25rem 0 4rem;
 
-	.content {
-		grid-column: span 12;
-		justify-self: end;
+	.logo {
+		@include content;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 4rem;
+		padding-bottom: $space-section;
+
+		.logo_square {
+			width: 16.5rem;
+			height: 16.5rem;
+		}
+
+		.logo_text {
+			height: 8rem;
+			max-width: 100%;
+		}
 	}
 
-	.navigationList {
-		margin: 0;
-		padding: 0;
-		list-style: none;
+	.row_2 {
+		@include content;
+		display: flex;
+		justify-content: space-between;
+		gap: 4rem;
+		padding-bottom: $space-section;
 
-		ul {
-			padding-left: 1rem;
-			list-style: none;
+		.introtext {
+			max-width: 40.31rem;
+		}
+
+		.contact {
+			display: grid;
+			gap: 4rem;
+			grid-template-columns: 1fr 1fr;
+			justify-self: flex-end;
+
+			.contact_col {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.footer_link {
+				text-transform: lowercase;
+			}
+		}
+	}
+
+	.row_3 {
+		@include content;
+		display: flex;
+		justify-content: space-between;
+		gap: 4rem;
+
+		.copy {
+			font-size: 0.875rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: 1.4px;
+			text-transform: uppercase;
+		}
+
+		.links {
+			display: flex;
+			gap: 1rem;
 		}
 	}
 }

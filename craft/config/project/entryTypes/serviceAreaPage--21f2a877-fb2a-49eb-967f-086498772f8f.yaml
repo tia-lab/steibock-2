@@ -1,0 +1,108 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  d15c0de0-0000-4000-8000-00000000000e:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d15c0de0-0000-4000-8000-000000000008
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: fe1e327f-f713-41a4-8ed3-eaac7c941b7b # Bild
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000009
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 360652e6-00ff-4774-b5c7-d9ad1331e09b # Abschnitte
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000000a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d15c0de0-0000-4000-8000-00000000000b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a471e9be-fe4f-4c4e-9088-abd5a9e070a7 # Page SEO
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000000c
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: d15c0de0-0000-4000-8000-00000000000d
+        userCondition: null
+    thumbFieldKey: null
+handle: serviceAreaPage
+hasTitleField: true
+icon: briefcase
+name: Einsatzbereich
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

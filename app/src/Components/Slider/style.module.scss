@@ -38,15 +38,6 @@
 }
 
 .control {
-	padding: 0.5rem 0.75rem;
-	border-color: $color-secondary !important;
-	background: transparent !important;
-	color: $color-secondary !important;
-	font-size: 0.75rem;
-	line-height: 1;
-	text-transform: uppercase;
-	cursor: pointer;
-
 	&:disabled {
 		opacity: 0.35;
 		cursor: not-allowed;

@@ -14,6 +14,7 @@ export const GlobalsQuery = graphql(
           address
           email
           phone
+          introtext
           footerNavigation {
             ...NavigationFragment
           }

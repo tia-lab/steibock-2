@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: sections
 instructions: null
-name: Sections
+name: Abschnitte
 searchable: false
 settings:
   createButtonLabel: null
@@ -12,58 +12,98 @@ settings:
       __assoc__:
         -
           - uid
-          - 9f753c5c-df7d-4198-8a6c-682d90b5207b # Section Hero
+          - 9f753c5c-df7d-4198-8a6c-682d90b5207b # Hero
         -
           - group
-          - Sections
+          - Abschnitte
     -
       __assoc__:
         -
           - uid
-          - 8a95c56e-9efa-4c74-afa7-dc065b39c23a # Section About
+          - ea7711c0-082d-49aa-8f14-34cd09e26971 # Links
         -
           - group
-          - Sections
+          - Abschnitte
     -
       __assoc__:
         -
           - uid
-          - 98055765-f8b4-4c53-8033-574ac496e7d5 # Section CTA
+          - 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # News
         -
           - group
-          - Sections
+          - Abschnitte
     -
       __assoc__:
         -
           - uid
-          - 245952a8-f5b6-4e30-a19f-46338a68a53c # Section Content
+          - 7c737252-7285-4d65-a8f6-b76210703803 # Projekte
         -
           - group
-          - Sections
+          - Abschnitte
     -
       __assoc__:
         -
           - uid
-          - 4eb068df-aa04-4606-9686-5d3cbd0b22c6 # Section Contact
+          - c4d09126-00dc-4403-8c84-15a5ac6c64c6 # Video
         -
           - group
-          - Sections
+          - Abschnitte
     -
       __assoc__:
         -
           - uid
-          - 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # Section News
+          - 7e505d85-bd8b-4d86-b890-1a02a9d5a33a # Bild + Text
         -
           - group
-          - Sections
+          - Abschnitte
     -
       __assoc__:
         -
           - uid
-          - 56d14e66-247f-45a4-9a20-0dd5eb33d4bc # Section Reference
+          - f050a072-2f76-4fc1-b93c-fc7d800db88c # Team
         -
           - group
-          - Sections
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 4ac60b82-89d9-42ae-ad0b-884ab8df3278 # Team CTA
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 30d36682-9062-4519-928a-2973860c5b8e # Galerie
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 85354831-bb1a-40cb-a459-2da5f0b152bf # Akkordeons
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - d35dadd8-6e27-42e3-88e7-1d6ed433c366 # FAQs
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 5147bb63-fa86-4731-90e9-5318e582d79d # Geschichte
+        -
+          - group
+          - Abschnitte
   includeTableView: false
   maxEntries: null
   minEntries: null

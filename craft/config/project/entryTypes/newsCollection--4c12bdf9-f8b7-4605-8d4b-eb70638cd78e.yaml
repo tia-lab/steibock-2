@@ -13,7 +13,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Items Limit
+            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Maximale Anzahl
             handle: null
             instructions: null
             label: null
@@ -29,7 +29,23 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 028c68a9-8240-4b8c-94d5-bca16475d037 # Collection Order By
+            fieldUid: afcfeefb-37c5-467b-acb1-5c19ae4588ca # Einträge pro Seite
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b56c2991-ed41-4c87-a7b1-2b795aab904e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 028c68a9-8240-4b8c-94d5-bca16475d037 # Sortierung der Übersicht
             handle: null
             instructions: null
             label: null
@@ -40,14 +56,14 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-        name: Collection
+        name: Übersicht
         uid: 12685b23-68d3-4eb9-b73a-d6a7d88e1d57
         userCondition: null
     thumbFieldKey: null
 handle: newsCollection
 hasTitleField: false
 icon: newspaper
-name: 'News Collection'
+name: Newsübersicht
 showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null

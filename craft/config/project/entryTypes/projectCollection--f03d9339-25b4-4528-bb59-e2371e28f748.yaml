@@ -1,0 +1,74 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  d15c0de0-0000-4000-8000-00000000001b:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Maximale Anzahl
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000017
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: afcfeefb-37c5-467b-acb1-5c19ae4588ca # Einträge pro Seite
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000018
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 028c68a9-8240-4b8c-94d5-bca16475d037 # Sortierung der Übersicht
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000019
+            userCondition: null
+            warning: null
+            width: 50
+        name: Inhalt
+        uid: d15c0de0-0000-4000-8000-00000000001a
+        userCondition: null
+    thumbFieldKey: null
+handle: projectCollection
+hasTitleField: false
+icon: folder-open
+name: Projektübersicht
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Projekte
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

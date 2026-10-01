@@ -1,0 +1,134 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  d15c0de0-0000-4000-8000-000000000035:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d15c0de0-0000-4000-8000-00000000002b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000002c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Maximale Anzahl
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000002d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: afcfeefb-37c5-467b-acb1-5c19ae4588ca # Einträge pro Seite
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000002e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 83e70c17-a574-4eb4-8f04-14f618cf155d # Sortierung
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000002f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4a830f76-cd0a-44dd-8587-2b261bb266eb
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000030
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d15c0de0-0000-4000-8000-000000000034
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionProjects
+hasTitleField: true
+icon: folder-open
+name: 'Sektion Projekte'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

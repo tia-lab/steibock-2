@@ -1,143 +1,92 @@
-import { Anim, ImageCraft, TransitionLink, Wrapper } from '@/Components'
+import { Button, CardNews, Container, Wrapper } from '@/Components'
+import type { CardNewsEntry } from '@/Components/CardNews'
 import { getNews, type NewsOrder } from '@/lib/craft/queries'
-import { NewsIndexQuery, RenderableSectionFragment } from '@/queries'
-import type { FragmentOf, ResultOf } from 'gql.tada'
+import { RenderableSectionFragment } from '@/queries'
+import clsx from 'clsx'
 import { readFragment } from 'gql.tada'
+import { ArrowRight } from 'lucide-react'
 import type { SectionComponentProps } from '../SectionRouter'
-import { getSectionSpacingStyle } from '../utils/section-spacing'
-import { NewsSlider } from './NewsSlider.client'
 import $ from './style.module.scss'
-
-type SectionNewsEntry = Extract<
-	FragmentOf<typeof RenderableSectionFragment>,
-	{ __typename?: 'sectionNews_Entry' }
->
-type SelectedNewsItem = NonNullable<
-	NonNullable<SectionNewsEntry['selectedNews']>[number]
->
-type FallbackNewsItem = NonNullable<
-	NonNullable<ResultOf<typeof NewsIndexQuery>['entries']>[number]
->
-type NewsItemSource = SelectedNewsItem | FallbackNewsItem
-type NewsItem = Extract<NewsItemSource, { __typename: 'news_Entry' }>
 
 const normalizeLimit = (value: unknown) => {
 	const parsed = Number(value)
 
-	return Number.isFinite(parsed) && parsed > 0 ? parsed : 12
+	return Number.isFinite(parsed) && parsed > 0 ? parsed : 4
 }
 
 const normalizeOrder = (value: unknown): NewsOrder => {
-	return value === 'oldest' ? 'oldest' : 'newest'
-}
-
-const isNewsItem = (item: unknown): item is NewsItem => {
-	return (
-		typeof item === 'object' &&
-		item !== null &&
-		(item as { __typename?: string }).__typename === 'news_Entry'
-	)
-}
-
-const NewsArticle = ({
-	item,
-	variant
-}: {
-	item: NewsItem
-	variant?: string | null
-}) => (
-	<TransitionLink
-		href={item.uri ?? '#'}
-		transition='fade'
-		className={$.article_link}>
-		<Anim.article
-			type={variant === 'slider' ? 'fade' : 'fade-up'}
-			key={item.id ?? item.uri}
-			className={$.article}>
-			{item.image?.[0] ? (
-				<div className={$.image_wrapper}>
-					<ImageCraft image={item.image[0]} className='object-fit' />
-				</div>
-			) : null}
-
-			<h3>{item.title}</h3>
-			<div>
-				{item.postDate ? (
-					<time className='text-2 font-secondary text-secondary-60'>
-						{item.postDate}
-					</time>
-				) : null}
-				{item.excerpt ? <p>{item.excerpt}</p> : null}
-			</div>
-		</Anim.article>
-	</TransitionLink>
-)
-
-const NewsList = ({
-	items,
-	variant
-}: {
-	items: NewsItem[]
-	variant?: string | null
-}) => {
-	const articles = items.map((item) => (
-		<NewsArticle key={item.id ?? item.uri} item={item} variant={variant} />
-	))
-
-	if (variant === 'slider') {
-		return <NewsSlider>{articles}</NewsSlider>
+	if (
+		value === 'oldest' ||
+		value === 'titleAsc' ||
+		value === 'titleDesc'
+	) {
+		return value
 	}
 
-	return <div className={$.grid}>{articles}</div>
+	return 'newest'
 }
 
-const SectionNewsFallback = async ({
-	limit,
-	order,
-	variant
-}: {
-	limit: number
-	order: NewsOrder
-	variant?: string | null
-}) => {
-	const data = await getNews(limit, order)
-	const items = (data.entries?.filter(isNewsItem) ?? []) as NewsItem[]
+const isNewsItem = (item: unknown): item is CardNewsEntry =>
+	typeof item === 'object' &&
+	item !== null &&
+	(item as { __typename?: string }).__typename === 'news_Entry'
 
-	return <NewsList items={items} variant={variant} />
-}
-
-export const SectionNews = ({
-	section,
-	spacingOverride
-}: SectionComponentProps) => {
+export const SectionNews = async ({ section }: SectionComponentProps) => {
 	const data = readFragment(RenderableSectionFragment, section)
 
-	if (data.__typename !== 'sectionNews_Entry') {
-		return null
-	}
+	if (data.__typename !== 'sectionNews_Entry') return null
 
-	const spacingSource = spacingOverride?.customSpacing ? spacingOverride : data
-	const selectedNews = (data.selectedNews?.filter(isNewsItem) ??
-		[]) as NewsItem[]
+	const limit = normalizeLimit(data.itemsLimit)
+	const selectedNews = data.selectedNews?.filter(isNewsItem) ?? []
+	const fallback = selectedNews.length
+		? null
+		: await getNews(limit, normalizeOrder(data.orderBy))
+	const news = (
+		selectedNews.length
+			? selectedNews
+			: (fallback?.entries?.filter(isNewsItem) ?? [])
+	).slice(0, limit)
+
+	if (!news.length) return null
+
+	const leftNews = news.filter((_, index) => index % 2 !== 0)
+	const rightNews = news.filter((_, index) => index % 2 === 0)
+	const placeButtonLeft = news.length > 2 && news.length % 2 !== 0
+	const moreNews = (
+		<div className={$.button}>
+			<Button href='/news' transition='fade'>
+				Mehr News
+				<ArrowRight aria-hidden='true' />
+			</Button>
+		</div>
+	)
 
 	return (
 		<section
 			data-section-id={data.id ?? undefined}
 			data-section-type={data.typeHandle ?? undefined}
-			data-news-variant={data.newsVariant ?? undefined}
-			style={getSectionSpacingStyle(spacingSource)}
 			className={$.section}>
-			<Wrapper fluid={data.newsVariant === 'slider' ? 'right' : undefined}>
-				<Anim.h2 className='mb-md'>{data.title}</Anim.h2>
-				{selectedNews.length ? (
-					<NewsList items={selectedNews} variant={data.newsVariant} />
-				) : (
-					<SectionNewsFallback
-						limit={normalizeLimit(data.itemsLimit)}
-						order={normalizeOrder(data.orderBy)}
-						variant={data.newsVariant}
-					/>
-				)}
+			<Wrapper>
+				<Container>
+					<div className={$.content}>
+						<div className={$.column}>
+							<div className={$.head}>
+								{data.title ? <h2 className='text-caption'>{data.title}</h2> : null}
+								{data.subtitle ? <p className='title-h4'>{data.subtitle}</p> : null}
+							</div>
+							{leftNews.map((item) => (
+								<CardNews key={item.id ?? item.uri} entry={item} className={$.item} />
+							))}
+							{placeButtonLeft ? moreNews : null}
+						</div>
+						<div className={clsx($.column, $.column_right)}>
+							{rightNews.map((item) => (
+								<CardNews key={item.id ?? item.uri} entry={item} className={$.item} />
+							))}
+							{placeButtonLeft ? null : moreNews}
+						</div>
+					</div>
+				</Container>
 			</Wrapper>
 		</section>
 	)

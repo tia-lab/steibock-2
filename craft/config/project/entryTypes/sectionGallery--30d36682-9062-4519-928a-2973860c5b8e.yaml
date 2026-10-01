@@ -1,0 +1,42 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  d15c0de0-0000-4000-8000-000000000062:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 80baf906-2e2a-4cc1-a5bb-55c69c30f7dd # Galerie
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000005d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d15c0de0-0000-4000-8000-000000000061
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionGallery
+hasTitleField: false
+icon: images
+name: 'Sektion Galerie'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Galerie
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

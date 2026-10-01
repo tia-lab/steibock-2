@@ -2,7 +2,7 @@ allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
-  649d602a-4683-4ec4-be3f-eacdc102d768:
+  d15c0de0-0000-4000-8000-000000000084:
     cardThumbAlignment: end
     tabs:
       -
@@ -32,7 +32,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f80c6b08-21da-4bcb-b954-6e2a66b7975e
+            uid: d15c0de0-0000-4000-8000-00000000007a
             userCondition: null
             warning: null
             width: 100
@@ -41,14 +41,30 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: a6ebaa54-ff7f-44bb-bfbe-2850b62c9c72 # News Variant
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-00000000007b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Maximale Anzahl
             handle: null
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c285d869-7e37-4ac1-8990-1880efd4a80d
+            uid: d15c0de0-0000-4000-8000-00000000007c
             userCondition: null
             warning: null
             width: 50
@@ -57,30 +73,14 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Items Limit
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2b58767c-917e-4430-b33b-7ee43f281642
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 83e70c17-a574-4eb4-8f04-14f618cf155d # Order By
+            fieldUid: 83e70c17-a574-4eb4-8f04-14f618cf155d # Sortierung
             handle: null
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8d443937-6eb7-4ea5-90c4-7a36aa6881c7
+            uid: d15c0de0-0000-4000-8000-00000000007e
             userCondition: null
             warning: null
             width: 50
@@ -89,73 +89,25 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 05cfa0aa-902b-4bd6-a461-bfc396b9a517 # Selected News
+            fieldUid: 05cfa0aa-902b-4bd6-a461-bfc396b9a517 # Ausgewählte News
             handle: null
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: aa48c089-a206-41b9-bd47-2baa01e57ba7
+            uid: d15c0de0-0000-4000-8000-00000000007f
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 07d5f2ea-fbd3-42b3-bdfa-d74ef94bdf5e # Custom Spacing
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 24e46980-6bfc-4b63-a520-548b66660b31
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 63b4f0ed-ea91-4662-bd31-c4d993c26bfe # Space Top
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 881c22c4-2e0e-4ecb-87f7-c53929332457
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 80449db7-9d3f-481c-a438-64d7616f2102 # Space Bottom
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a6368372-050b-4aa2-8080-6ebbed7d7e20
-            userCondition: null
-            warning: null
-            width: 50
-        name: Content
-        uid: 85b841bd-0f8f-4c5c-9886-4d111b4f27b6
+        name: Inhalt
+        uid: d15c0de0-0000-4000-8000-000000000083
         userCondition: null
     thumbFieldKey: null
 handle: sectionNews
 hasTitleField: true
 icon: newspaper
-name: 'Section News'
+name: 'Sektion News'
 showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null

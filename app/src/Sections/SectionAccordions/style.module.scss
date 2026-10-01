@@ -1,0 +1,29 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section 0;
+
+	.content,
+	.list,
+	.answer {
+		display: flex;
+		flex-direction: column;
+		gap: $space-sm;
+	}
+
+	.item {
+		padding: $space-sm 0;
+		border-bottom: 1px solid $color-stroke;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: $space-sm;
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+	}
+}

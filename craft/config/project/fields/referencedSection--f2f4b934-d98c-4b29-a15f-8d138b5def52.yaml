@@ -16,7 +16,7 @@ settings:
   showUnpermittedEntries: false
   showUnpermittedSections: false
   sources:
-    - 'section:0e026e73-9c8a-42a9-8750-396dc0f8f17a' # Reusable Sections
+    - 'section:0e026e73-9c8a-42a9-8750-396dc0f8f17a' # Wiederverwendbare Abschnitte
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

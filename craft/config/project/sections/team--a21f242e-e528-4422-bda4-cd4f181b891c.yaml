@@ -1,0 +1,19 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 9b7c2030-cb4f-4ba7-9ca8-36e180f63a36 # Teammitglied
+handle: team
+maxAuthors: 1
+name: Team
+propagationMethod: all
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: fa863f94-5758-430e-922c-b6dc95b56029
+type: structure

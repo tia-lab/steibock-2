@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: form
 instructions: null
-name: Form
+name: Formular
 searchable: false
 settings:
   forms: '*'

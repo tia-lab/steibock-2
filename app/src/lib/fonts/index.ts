@@ -1,19 +1,46 @@
-import { IBM_Plex_Mono } from 'next/font/google'
 import localFont from 'next/font/local'
 
 const primary = localFont({
 	src: [
 		{
-			path: './SuisseIntl-Light-WebS.woff2',
-			weight: '300'
+			path: './obvia-normal-100.woff2',
+			weight: '100',
+			style: 'normal'
 		},
 		{
-			path: './SuisseIntl-Regular-WebS.woff2',
-			weight: '400'
+			path: './obvia-normal-300.woff2',
+			weight: '300',
+			style: 'normal'
 		},
 		{
-			path: './SuisseIntl-Medium-WebS.woff2',
-			weight: '500'
+			path: './obvia-normal-400.woff2',
+			weight: '400',
+			style: 'normal'
+		},
+		{
+			path: './obvia-italic-400.woff2',
+			weight: '400',
+			style: 'italic'
+		},
+		{
+			path: './obvia-normal-500.woff2',
+			weight: '500',
+			style: 'normal'
+		},
+		{
+			path: './obvia-normal-600.woff2',
+			weight: '600',
+			style: 'normal'
+		},
+		{
+			path: './obvia-normal-800.woff2',
+			weight: '800',
+			style: 'normal'
+		},
+		{
+			path: './obvia-italic-800.woff2',
+			weight: '800',
+			style: 'italic'
 		}
 	],
 	variable: '--font-primary',
@@ -22,14 +49,7 @@ const primary = localFont({
 	preload: true
 })
 
-const secondary = IBM_Plex_Mono({
-	variable: '--font-mono',
-	subsets: ['latin'],
-	weight: ['400', '500'],
-	preload: true,
-	fallback: ['Arial', 'sans-serif'],
-	display: 'swap'
-})
+const secondary = primary
 
 export const fonts = {
 	primary,

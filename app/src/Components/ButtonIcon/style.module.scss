@@ -1,33 +1,46 @@
 @use '../../styles/export.scss' as *;
 
-.button {
-	aspect-ratio: 1;
-	border-radius: 999px;
-	flex-shrink: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
+.button.button {
+	display: inline-flex;
 	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	padding: 0.75rem;
+	border: 1px solid $color-white;
+	background: $color-primary-w-60;
+	border-radius: 2px;
+	color: $color-white;
+	box-sizing: border-box;
+	transition:
+		background-color $duration-short $ease-out,
+		color $duration-short $ease-out,
+		border-color $duration-short $ease-out,
+		opacity $duration-short $ease-out;
 
 	& > svg {
 		display: block;
-		width: 65%;
-		height: 65%;
-		stroke-width: 1.75;
+		width: 1.25rem;
+		height: 1.25rem;
+		color: currentColor;
+	}
+
+	&:hover {
+		background: $color-accent;
+		border-color: $color-accent;
+		color: $color-primary;
+	}
+
+	&:disabled {
+		opacity: 0.35;
+		cursor: not-allowed;
+		pointer-events: none;
 	}
 }
 
 .button.small {
-	width: 2rem;
-	padding: 0;
-}
-
-.button.medium {
-	width: 2.5rem;
-	padding: 0;
+	padding: 0.6rem;
 }
 
 .button.large {
-	width: 3rem;
-	padding: 0;
+	padding: 1rem;
 }

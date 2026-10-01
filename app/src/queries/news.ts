@@ -12,6 +12,11 @@ export const NewsIndexQuery = graphql(
         ... on news_Entry {
           postDate
           excerpt
+          newsKategorie {
+            __typename
+            id
+            title
+          }
           image {
             ...AssetImageFragment
           }

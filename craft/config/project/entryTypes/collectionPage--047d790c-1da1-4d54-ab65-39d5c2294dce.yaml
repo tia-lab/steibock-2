@@ -41,7 +41,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: abdba094-401c-4d18-a918-e8d2e40dbdc9 # Collection
+            fieldUid: abdba094-401c-4d18-a918-e8d2e40dbdc9 # Übersicht
             handle: null
             instructions: null
             label: null
@@ -81,7 +81,7 @@ fieldLayouts:
 handle: collectionPage
 hasTitleField: true
 icon: square-list
-name: 'Collection Page'
+name: Übersichtsseite
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

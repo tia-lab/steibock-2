@@ -1,77 +1,47 @@
 @use '../../styles/export.scss' as *;
 
 .section {
-	padding: $space-section3 0 $space-section1 0;
-	background-color: green;
+	padding-bottom: $space-section;
 
-	.grid {
+	.content {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: $space-lg;
-	}
-}
+		grid-template-columns: 1fr 1fr;
+		grid-column: 2 / -2;
+		gap: 0;
 
-.slider {
-	grid-template-areas:
-		'arrows'
-		'viewport'
-		'progress';
-	gap: $space-sm;
-}
+		.column {
+			display: flex;
+			flex-direction: column;
+			gap: 13rem;
 
-.slider_controls {
-	display: contents;
-}
+			.button {
+				align-self: flex-end;
+			}
 
-.slider_arrows {
-	grid-area: arrows;
-	display: flex;
-	gap: 2rem;
-	align-items: center;
-	justify-content: flex-start;
-}
+			&.column_right {
+				padding-top: 8rem;
 
-.slider_arrow {
-	border-color: $color-secondary;
-	color: $color-secondary;
+				.button {
+					align-self: flex-start;
+				}
 
-	&:hover {
-		background-color: $color-secondary;
-		border-color: $color-secondary;
-	}
+				& .item {
+					&:nth-child(odd) {
+						align-self: flex-end;
+					}
 
-	&:disabled {
-		opacity: 0.35;
-	}
-}
+					&:nth-child(even) {
+						align-self: flex-start;
+					}
+				}
+			}
+		}
 
-.slider_progress {
-	grid-area: progress;
-	width: min(100%, 32rem);
-	height: 1px;
-	overflow: hidden;
-	background: $color-secondary-w-20;
-	transform: translateZ(0);
-}
-
-.slider_progress_bar {
-	width: 100%;
-	height: 100%;
-	background: $color-accent;
-	transform: scaleX(0);
-	transform-origin: left center;
-	transition: transform $duration-short $ease-out;
-}
-
-.article {
-	display: flex;
-	flex-direction: column;
-	gap: $space-xs;
-	.image_wrapper {
-		@include object-fit-wrap;
-		padding-top: 150%;
-		.image {
-			@include object-fit;
+		.head {
+			display: flex;
+			margin-bottom: 4.5rem;
+			flex-direction: column;
+			gap: 2rem;
 		}
 	}
 }

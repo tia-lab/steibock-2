@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: selectedNews
 instructions: null
-name: 'Selected News'
+name: 'Ausgewählte News'
 searchable: false
 settings:
   allowSelfRelations: false

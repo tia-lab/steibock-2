@@ -37,11 +37,27 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0f6d4ca1-23ae-480c-860a-a7feb22f3a47 # News Kategorie
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91cd5ce7-65dc-4ae2-b6c2-c741e3fed548
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2026-08-25T10:50:19+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: fe1e327f-f713-41a4-8ed3-eaac7c941b7b # Image
+            fieldUid: fe1e327f-f713-41a4-8ed3-eaac7c941b7b # Bild
             handle: null
             instructions: null
             label: null

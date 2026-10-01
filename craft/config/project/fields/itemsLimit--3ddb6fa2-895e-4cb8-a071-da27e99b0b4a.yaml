@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: itemsLimit
 instructions: null
-name: 'Items Limit'
+name: 'Maximale Anzahl'
 searchable: false
 settings:
   decimals: 0

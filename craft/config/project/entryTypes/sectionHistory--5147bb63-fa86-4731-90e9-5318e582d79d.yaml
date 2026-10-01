@@ -1,0 +1,54 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  67890991-4008-449f-a26b-d591e8038bdf:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 27f0c47b-aa0e-4e96-9a19-a50dc376cb03
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 73e70536-945f-4895-8105-d737a8bbc35c
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionHistory
+hasTitleField: true
+icon: clock
+name: 'Sektion Geschichte'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

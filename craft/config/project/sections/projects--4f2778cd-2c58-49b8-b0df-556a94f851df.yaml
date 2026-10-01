@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: ea508888-df19-4a48-bffd-bcbe52ed7430 # Projekt
+handle: projects
+maxAuthors: 1
+name: Projekte
+previewTargets:
+  -
+    label: 'Next Preview'
+    refresh: '1'
+    urlFormat: '$NEXT_PUBLIC_SITE_URL/api/preview?uri={uri}&secret=${CRAFT_PREVIEW_SECRET}'
+propagationMethod: all
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'projekte/{slug}'
+type: channel

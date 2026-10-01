@@ -1,6 +1,6 @@
-import { Anim, NavigationItems, Wrapper } from '@/Components'
+import { Button, Logo, Wrapper } from '@/Components'
 import { getGlobals } from '@/lib/craft/queries'
-import { LinkFragment, NavigationFragment } from '@/queries'
+import { LinkFragment } from '@/queries'
 import { clsx } from 'clsx'
 import type { FragmentOf } from 'gql.tada'
 import { readFragment } from 'gql.tada'
@@ -10,13 +10,8 @@ export interface FooterProps extends React.HTMLAttributes<HTMLElement> {}
 
 type LinkEntry = FragmentOf<typeof LinkFragment>
 
-const pathFromCraftUri = (uri?: string | null) => {
-	if (!uri || uri === '__home__') {
-		return '/'
-	}
-
-	return `/${uri}`
-}
+const splitText = (value: string | null) =>
+	value?.split('</br>').map((part) => part.trim()) ?? []
 
 export const Footer = async ({ ...props }: FooterProps) => {
 	const globals = await getGlobals()
@@ -29,80 +24,66 @@ export const Footer = async ({ ...props }: FooterProps) => {
 	return (
 		<footer className={clsx('section', $.footer)} {...props}>
 			<Wrapper container>
-				<Anim.div type='fade-up' className={$.content}>
-					{footer.companyName ? <h2>{footer.companyName}</h2> : null}
-					{footer.address ? <p>{footer.address}</p> : null}
-					{footer.email ? (
-						<a href={`mailto:${footer.email}`}>{footer.email}</a>
+				<div className={$.logo}>
+					<Logo variant='square' className={$.logo_square} />
+					<Logo variant='text' className={$.logo_text} />
+				</div>
+			</Wrapper>
+			<Wrapper container>
+				<div className={$.row_2}>
+					{footer.introtext ? (
+						<p className={clsx('text-lead', $.introtext)}>{footer.introtext}</p>
 					) : null}
-					{footer.phone ? <a href={`tel:${footer.phone}`}>{footer.phone}</a> : null}
-					{footer.footerNavigation?.length ? (
-						<div>
-							{footer.footerNavigation.map((navigation) => {
-								if (navigation?.__typename !== 'navigation_Entry') {
-									return null
-								}
-								const navigationData = readFragment(
-									NavigationFragment,
-									navigation as FragmentOf<typeof NavigationFragment>,
-								)
-
-								return (
-									<nav key={navigationData.id ?? navigationData.navigationHandle}>
-										{navigationData.title ? <h3>{navigationData.title}</h3> : null}
-										<NavigationItems
-											items={navigationData.navigationItems}
-											maxDepth={navigationData.maxDepth}
-											className={$.navigationList}
-										/>
-									</nav>
-								)
-							})}
+					<div className={$.contact}>
+						<div className={$.contact_col}>
+							<p className='text-cpt'>Standort</p>
+							{footer.companyName ? (
+								<p className='text-small'>{footer.companyName}</p>
+							) : null}
+							{splitText(footer.address).map((line, index) => (
+								<p className='text-small' key={index}>
+									{line}
+								</p>
+							))}
 						</div>
-					) : null}
+						<div>
+							<p className='text-cpt'>Kontakt</p>
+							{footer.email ? (
+								<Button variant='text' href={`mailto:${footer.email}`}>
+									<p className={clsx($.footer_link, 'text-small')}>{footer.email}</p>
+								</Button>
+							) : null}
+							{footer.phone ? (
+								<Button variant='text' href={`tel:${footer.phone}`}>
+									<p className={clsx($.footer_link, 'text-small')}>{footer.phone}</p>
+								</Button>
+							) : null}
+						</div>
+					</div>
+				</div>
+			</Wrapper>
+			<Wrapper container>
+				<div className={$.row_3}>
+					<p className={$.copy}>
+						&copy; {new Date().getFullYear()} Steibock AG | Design und Konzept: UBIQ AG
+					</p>
 					{footer.links?.length ? (
-						<div>
+						<div className={$.links}>
 							{footer.links.map((link) => {
-								if (!link) {
-									return null
-								}
-
-								const linkData = readFragment(LinkFragment, link as LinkEntry)
-								const pageUri = linkData.pageLink[0]?.uri
-								const href = linkData.externalUrl || pathFromCraftUri(pageUri)
+								if (!link) return null
 
 								return (
-									<a
-										key={linkData.id ?? linkData.title}
-										href={href}
-										target={linkData.isExternal ? '_blank' : undefined}
-										rel={linkData.isExternal ? 'noreferrer' : undefined}>
-										{linkData.title}
-									</a>
+									<Button
+										key={readFragment(LinkFragment, link as LinkEntry).id}
+										link={link as LinkEntry}
+										variant='text'
+										transition='fade'
+									/>
 								)
 							})}
 						</div>
 					) : null}
-					{footer.socialLinks?.length ? (
-						<div>
-							{footer.socialLinks.map((link) => {
-								if (!link?.externalUrl) {
-									return null
-								}
-
-								return (
-									<a
-										key={link.id ?? link.externalUrl}
-										href={link.externalUrl}
-										target='_blank'
-										rel='noreferrer'>
-										{link.title}
-									</a>
-								)
-							})}
-						</div>
-					) : null}
-				</Anim.div>
+				</div>
 			</Wrapper>
 		</footer>
 	)

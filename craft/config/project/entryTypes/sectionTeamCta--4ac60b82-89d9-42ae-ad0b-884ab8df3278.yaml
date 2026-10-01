@@ -1,0 +1,86 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  d15c0de0-0000-4000-8000-00000000005c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d15c0de0-0000-4000-8000-000000000055
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 42cdacef-198c-43ea-bd8a-e46f004f0ec4 # Caption
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000056
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000057
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: d15c0de0-0000-4000-8000-00000000005b
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionTeamCta
+hasTitleField: true
+icon: users
+name: 'Sektion Team CTA'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

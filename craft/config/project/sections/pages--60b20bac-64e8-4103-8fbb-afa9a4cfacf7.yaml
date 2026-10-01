@@ -2,14 +2,18 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 7c0872ca-cff9-4732-92b2-39c647480305 # Page
+    uid: 7c0872ca-cff9-4732-92b2-39c647480305 # Seite
   -
-    uid: 047d790c-1da1-4d54-ab65-39d5c2294dce # Collection Page
+    uid: 047d790c-1da1-4d54-ab65-39d5c2294dce # Übersichtsseite
   -
-    uid: 8525435f-ca62-40f9-ab52-df87683f66e9 # Legal Page
+    uid: 8525435f-ca62-40f9-ab52-df87683f66e9 # Rechtliche Seite
+  -
+    uid: 0b8df5cf-1029-4a2b-b145-20a506dc9111 # Formularseite
+  -
+    uid: 21f2a877-fb2a-49eb-967f-086498772f8f # Einsatzbereich
 handle: pages
 maxAuthors: 1
-name: Pages
+name: Seiten
 previewTargets:
   -
     label: 'Next Preview'

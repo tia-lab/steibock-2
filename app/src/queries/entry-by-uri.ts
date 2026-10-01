@@ -25,6 +25,17 @@ export const EntryByUriQuery = graphql(
 						...SectionFragment
 					}
 				}
+				... on serviceAreaPage_Entry {
+					pageSeo {
+						...SeoFragment
+					}
+					image {
+						...AssetImageFragment
+					}
+					sections {
+						...SectionFragment
+					}
+				}
 				... on legalPage_Entry {
 					pageSeo {
 						...SeoFragment

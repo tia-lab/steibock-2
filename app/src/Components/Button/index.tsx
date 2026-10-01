@@ -41,7 +41,7 @@ export interface ButtonProps
   modal?: ModalStore["type"];
   sidebar?: SidebarStore["type"];
   download?: boolean | string;
-  variant?: "default" | "outline";
+  variant?: "default" | "outline" | "text";
   children?: React.ReactNode;
 }
 
@@ -97,6 +97,7 @@ export const Button = ({
       [$.medium]: size === "medium",
       [$.large]: size === "large",
       [$.outline]: variant === "outline",
+      [$.text]: variant === "text",
     },
     externalClassName,
   );

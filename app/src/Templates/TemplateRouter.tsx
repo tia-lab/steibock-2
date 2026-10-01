@@ -14,6 +14,7 @@ type Props = {
 export const TemplateRouter = ({ entry }: Props) => {
   switch (entry.__typename) {
     case "page_Entry":
+    case "serviceAreaPage_Entry":
       return <PageTemplate entry={entry} />;
     case "legalPage_Entry":
       return <LegalTemplate entry={entry} />;

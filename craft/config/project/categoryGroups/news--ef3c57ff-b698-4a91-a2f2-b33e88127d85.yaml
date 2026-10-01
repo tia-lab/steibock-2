@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  386cc13f-124e-4972-afc7-51bc4810af40:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 72d7860c-2a22-4632-bdef-5657198d21d0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 57d1aca2-ad99-4f8d-8322-a2df157ea795
+        userCondition: null
+    thumbFieldKey: null
+handle: news
+name: News
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: b88783e2-8ecb-4e2a-8ba4-d8efd70fe9dc

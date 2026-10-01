@@ -2,20 +2,32 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 9f753c5c-df7d-4198-8a6c-682d90b5207b # Section Hero
+    uid: 9f753c5c-df7d-4198-8a6c-682d90b5207b # Hero
   -
-    uid: 8a95c56e-9efa-4c74-afa7-dc065b39c23a # Section About
+    uid: ea7711c0-082d-49aa-8f14-34cd09e26971 # Links
   -
-    uid: 98055765-f8b4-4c53-8033-574ac496e7d5 # Section CTA
+    uid: 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # News
   -
-    uid: 245952a8-f5b6-4e30-a19f-46338a68a53c # Section Content
+    uid: 7c737252-7285-4d65-a8f6-b76210703803 # Projekte
   -
-    uid: 4eb068df-aa04-4606-9686-5d3cbd0b22c6 # Section Contact
+    uid: c4d09126-00dc-4403-8c84-15a5ac6c64c6 # Video
   -
-    uid: 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # Section News
+    uid: 7e505d85-bd8b-4d86-b890-1a02a9d5a33a # Bild + Text
+  -
+    uid: f050a072-2f76-4fc1-b93c-fc7d800db88c # Team
+  -
+    uid: 4ac60b82-89d9-42ae-ad0b-884ab8df3278 # Team CTA
+  -
+    uid: 30d36682-9062-4519-928a-2973860c5b8e # Galerie
+  -
+    uid: 85354831-bb1a-40cb-a459-2da5f0b152bf # Akkordeons
+  -
+    uid: d35dadd8-6e27-42e3-88e7-1d6ed433c366 # FAQs
+  -
+    uid: 5147bb63-fa86-4731-90e9-5318e582d79d # Geschichte
 handle: reusableSections
 maxAuthors: 1
-name: 'Reusable Sections'
+name: 'Wiederverwendbare Abschnitte'
 propagationMethod: all
 siteSettings:
   1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next

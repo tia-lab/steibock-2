@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: orderBy
 instructions: null
-name: 'Order By'
+name: Sortierung
 searchable: false
 settings:
   customOptions: false
@@ -10,7 +10,7 @@ settings:
       __assoc__:
         -
           - label
-          - Newest
+          - 'Datum: neueste zuerst'
         -
           - value
           - newest
@@ -21,7 +21,7 @@ settings:
       __assoc__:
         -
           - label
-          - Oldest
+          - 'Datum: älteste zuerst'
         -
           - value
           - oldest
@@ -32,7 +32,29 @@ settings:
       __assoc__:
         -
           - label
-          - Manual
+          - 'Alphabetisch A–Z'
+        -
+          - value
+          - titleAsc
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - 'Alphabetisch Z–A'
+        -
+          - value
+          - titleDesc
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - Craft-Reihenfolge
         -
           - value
           - manual

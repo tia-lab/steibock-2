@@ -3,21 +3,15 @@ import { Anim, Container, ImageCraft, Parallax, Wrapper } from '@/Components'
 import { RenderableSectionFragment } from '@/queries'
 import type { FragmentOf } from 'gql.tada'
 import { readFragment } from 'gql.tada'
-import {
-	getSectionSpacingStyle,
-	type SectionSpacingSource
-} from '../utils/section-spacing'
 import $ from './style.module.scss'
 
 interface SectionHeroProps extends React.HTMLAttributes<HTMLElement> {
 	section?: FragmentOf<typeof RenderableSectionFragment> | null
-	spacingOverride?: SectionSpacingSource | null
 	fallbackTitle?: string | null
 }
 
 export const SectionHero = ({
 	section,
-	spacingOverride,
 	fallbackTitle,
 	style,
 	...props
@@ -30,13 +24,9 @@ export const SectionHero = ({
 
 	const imageRef = data.image[0] ?? null
 	const title = data.title || fallbackTitle
-	const spacingSource = spacingOverride?.customSpacing ? spacingOverride : data
-	const spacingStyle = getSectionSpacingStyle(spacingSource)
-	const sectionStyle =
-		spacingStyle || style ? { ...spacingStyle, ...style } : undefined
 
 	return (
-		<section className={$.section} style={sectionStyle} {...props}>
+		<section className={$.section} style={style} {...props}>
 			<Wrapper>
 				<Container>
 					<div className={$.content}>

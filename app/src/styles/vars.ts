@@ -69,58 +69,72 @@ const space = {
 		mobile: rem(0)
 	}),
 
-	section1: responsive({
-		desktop: rem(2),
-		mobile: rem(1)
-	}),
-
-	section2: responsive({
-		desktop: rem(5),
-		mobile: rem(3)
-	}),
-
-	section3: responsive({
-		desktop: rem(10),
+	section: responsive({
+		desktop: rem(7.5),
 		mobile: rem(5)
-	})
+	}),
+	// ponytail: temporary aliases; remove when the remaining starter templates are ported
+	section1: responsive({ desktop: rem(2), mobile: rem(1) }),
+	section2: responsive({ desktop: rem(5), mobile: rem(3) }),
+	section3: responsive({ desktop: rem(10), mobile: rem(5) })
 } as const
 
 const colors = {
 	primary: themed({
-		light: hex('#f7f7f2'),
-		dark: hex('#080f11')
+		light: hex('#1F2837'),
+		dark: hex('#1F2837')
 	}),
 	secondary: themed({
-		light: hex('#080f11'),
-		dark: hex('#f7f7f2')
+		light: hex('#4B5463'),
+		dark: hex('#4B5463')
+	}),
+	third: themed({
+		light: hex('#D1D5DB'),
+		dark: hex('#D1D5DB')
 	}),
 	accent: themed({
-		light: hex('#bc4749'),
-		dark: hex('#48d597')
+		light: hex('#D1D5DB'),
+		dark: hex('#D1D5DB')
 	}),
 	grey: themed({
-		light: hex('#999999'),
-		dark: hex('#999999')
+		light: hex('#E5E7EB'),
+		dark: hex('#E5E7EB')
+	}),
+	greyLight: themed({
+		light: hex('#F3F4F6'),
+		dark: hex('#F3F4F6')
+	}),
+	greyMid: themed({
+		light: hex('#D1D5DB'),
+		dark: hex('#D1D5DB')
+	}),
+	greyDark: themed({
+		light: hex('#6C7281'),
+		dark: hex('#6C7281')
 	}),
 	stroke: themed({
-		light: hex('#080f11'),
-		dark: hex('#f4f0e1')
+		light: hex('#E5E7EB'),
+		dark: hex('#E5E7EB')
+	}),
+	font: themed({
+		light: hex('#FFFFFF'),
+		dark: hex('#FFFFFF')
 	}),
 	white: themed({
-		light: hex('#f7f7f2'),
-		dark: hex('#f7f7f2')
+		light: hex('#FFFFFF'),
+		dark: hex('#FFFFFF')
 	}),
 	black: themed({
-		light: hex('#080f11'),
-		dark: hex('#080f11')
+		light: hex('#000000'),
+		dark: hex('#000000')
 	}),
 	success: themed({
 		light: hex('#48d597'),
 		dark: hex('#48d597')
 	}),
 	error: themed({
-		light: hex('#bc4749'),
-		dark: hex('#bc4749')
+		light: hex('#C31152'),
+		dark: hex('#C31152')
 	})
 } as const
 

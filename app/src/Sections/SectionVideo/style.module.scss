@@ -1,0 +1,111 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	.frame {
+		@include content;
+		@include object-fit-wrap;
+		display: flex;
+		aspect-ratio: 1290/794;
+		padding: 2rem;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.bg {
+			@include object-fit-wrap;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			width: 100%;
+			height: 100%;
+
+			.image {
+				@include object-fit;
+				opacity: 0.5;
+				filter: grayscale(1);
+			}
+
+			.overlay {
+				@include blur;
+				position: absolute;
+				inset: 0;
+			}
+		}
+
+		.content {
+			position: relative;
+			z-index: 2;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			padding: 2rem 0;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.video_button {
+			position: absolute;
+			z-index: 3;
+			display: flex;
+			height: 23.625rem;
+			aspect-ratio: 278/378;
+			overflow: hidden;
+			align-items: center;
+			justify-content: center;
+
+			.trigger {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				overflow: hidden;
+				color: inherit;
+				cursor: pointer;
+				background: none;
+				border: 0;
+				isolation: isolate;
+
+				&::after {
+					position: absolute;
+					inset: 0;
+					content: '';
+					background-color: $color-primary-alpha-40;
+					pointer-events: none;
+				}
+			}
+
+			.image_button {
+				@include object-fit;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.play_icon {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 4;
+				width: 3rem;
+				height: 3rem;
+				transform: translate(-50%, -50%);
+			}
+
+			.video {
+				@include object-fit;
+				z-index: 5;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.close {
+			position: absolute;
+			top: 2rem;
+			right: 2rem;
+			z-index: 6;
+		}
+	}
+}

@@ -41,7 +41,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: fe1e327f-f713-41a4-8ed3-eaac7c941b7b # Image
+            fieldUid: fe1e327f-f713-41a4-8ed3-eaac7c941b7b # Bild
             handle: null
             instructions: null
             label: null
@@ -57,7 +57,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 360652e6-00ff-4774-b5c7-d9ad1331e09b # Sections
+            fieldUid: 360652e6-00ff-4774-b5c7-d9ad1331e09b # Abschnitte
             handle: null
             instructions: null
             label: null
@@ -97,7 +97,7 @@ fieldLayouts:
 handle: page
 hasTitleField: true
 icon: memo
-name: Page
+name: Seite
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

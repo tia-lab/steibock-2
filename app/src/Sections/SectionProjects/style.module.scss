@@ -1,0 +1,35 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section 0;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: $space-md;
+	}
+
+	.list {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: $space-md;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		@include mobile {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		gap: $space-xs;
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+	}
+}

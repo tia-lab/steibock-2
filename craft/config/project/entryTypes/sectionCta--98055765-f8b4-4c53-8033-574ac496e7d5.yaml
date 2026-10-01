@@ -68,54 +68,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 07d5f2ea-fbd3-42b3-bdfa-d74ef94bdf5e # Custom Spacing
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9214a761-24a9-4a31-b0eb-ba8ecba39ff8
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 63b4f0ed-ea91-4662-bd31-c4d993c26bfe # Space Top
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4ff65e49-bf10-4696-b0ab-2c3cbbfbf8ba
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: null
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 80449db7-9d3f-481c-a438-64d7616f2102 # Space Bottom
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7e1d93d4-2245-49ce-9518-04f8cb17acf5
-            userCondition: null
-            warning: null
-            width: 50
         name: Content
         uid: c869a93a-c166-4264-b871-6344585b692e
         userCondition: null
@@ -123,7 +75,7 @@ fieldLayouts:
 handle: sectionCta
 hasTitleField: true
 icon: bullhorn
-name: 'Section CTA'
+name: 'Sektion CTA'
 showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null

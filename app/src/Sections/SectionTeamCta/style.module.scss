@@ -1,0 +1,11 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section 0;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: $space-sm;
+	}
+}

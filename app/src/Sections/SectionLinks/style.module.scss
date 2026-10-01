@@ -1,0 +1,32 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding-bottom: $space-section;
+
+	.title {
+		grid-column: 2 / -2;
+		padding-bottom: 4rem;
+		padding-left: 8.7rem;
+	}
+
+	.content {
+		display: flex;
+		grid-column: 2 / -2;
+		flex-direction: column;
+		gap: 4rem;
+
+		.item {
+			display: grid;
+			grid-template-columns: 8.7rem 1fr;
+			align-items: start;
+			color: inherit;
+			text-decoration: none;
+
+			.item_title {
+				display: flex;
+				gap: 0.5rem;
+				align-items: flex-start;
+			}
+		}
+	}
+}

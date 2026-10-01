@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: collectionOrderBy
 instructions: null
-name: 'Collection Order By'
+name: 'Sortierung der Übersicht'
 searchable: false
 settings:
   customOptions: false
@@ -10,7 +10,7 @@ settings:
       __assoc__:
         -
           - label
-          - Newest
+          - 'Datum: neueste zuerst'
         -
           - value
           - newest
@@ -21,7 +21,7 @@ settings:
       __assoc__:
         -
           - label
-          - Oldest
+          - 'Datum: älteste zuerst'
         -
           - value
           - oldest
@@ -32,7 +32,7 @@ settings:
       __assoc__:
         -
           - label
-          - 'Title A-Z'
+          - 'Alphabetisch A–Z'
         -
           - value
           - titleAsc
@@ -43,7 +43,7 @@ settings:
       __assoc__:
         -
           - label
-          - 'Title Z-A'
+          - 'Alphabetisch Z–A'
         -
           - value
           - titleDesc
