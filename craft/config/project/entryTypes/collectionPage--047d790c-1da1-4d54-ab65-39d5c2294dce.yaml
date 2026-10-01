@@ -1,0 +1,92 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  018d7fd2-6221-4e33-84ce-62ac74e5a12e:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e9e07cdb-ce40-4591-a625-162c86cab938
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: abdba094-401c-4d18-a918-e8d2e40dbdc9 # Collection
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c59d52f3-83a3-42bd-9f3d-48a7ee614d0f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ca6bde57-c14a-4c1d-bcfd-a6593372e3cb
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a471e9be-fe4f-4c4e-9088-abd5a9e070a7 # Page SEO
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44a4d5f0-7d40-47ad-9b8f-39ab969e120e
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 5ffd3a1c-8bd5-47f3-a518-548351f81eab
+        userCondition: null
+    thumbFieldKey: null
+handle: collectionPage
+hasTitleField: true
+icon: square-list
+name: 'Collection Page'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

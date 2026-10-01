@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+bun scripts/prepare-commit-message.ts "$1" "$2" "$3"

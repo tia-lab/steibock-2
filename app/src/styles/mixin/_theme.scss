@@ -1,0 +1,7 @@
+@use './../vars.scss' as *;
+@use './breakpoints' as mixin;
+
+@mixin fluid() {
+  margin-left: calc(#{$page-padding-global} * -1);
+  margin-right: calc(#{$page-padding-global} * -1);
+}

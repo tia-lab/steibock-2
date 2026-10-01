@@ -1,0 +1,19 @@
+columnSuffix: null
+handle: cookieRetentionDays
+instructions: null
+name: 'Cookie Retention Days'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 365
+  max: 3650
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  step: 1
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

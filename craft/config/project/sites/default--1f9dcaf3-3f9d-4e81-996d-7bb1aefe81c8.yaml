@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en
+name: 'Ubiq Next'
+primary: true
+siteGroup: e1c90914-8878-4287-92af-bfa5509c7370 # Ubiq Next
+sortOrder: 1

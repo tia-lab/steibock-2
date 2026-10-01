@@ -1,0 +1,36 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section3 0 $space-section1;
+}
+
+.title {
+	margin-bottom: $space-lg;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: $space-lg;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+}
+
+.article {
+	display: flex;
+	flex-direction: column;
+	gap: $space-xs;
+}
+
+.link {
+	display: flex;
+	flex-direction: column;
+	gap: $space-xs;
+}
+
+.image {
+	@include object-fit-wrap;
+	padding-top: 66.666%;
+}

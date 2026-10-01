@@ -1,0 +1,28 @@
+isPublic: false
+name: NextJs
+scope:
+  - 'sites.1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8:read' # Ubiq Next
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'sections.2ff02e44-9d61-41bd-bf2c-5d7434a838d2:read' # Navigations
+  - 'sections.bbe74a36-5c8c-4b60-8191-579ce8df7265:read' # News
+  - 'sections.60b20bac-64e8-4103-8fbb-afa9a4cfacf7:read' # Pages
+  - 'sections.0e026e73-9c8a-42a9-8750-396dc0f8f17a:read' # Reusable Sections
+  - 'nestedentryfields.7de1aa36-fe1f-4d28-b98e-4d1e7123d0e9:read' # Rich Text
+  - 'nestedentryfields.6f4fd0ee-dca6-41bc-9a7d-a027e3e1077f:read' # Links
+  - 'nestedentryfields.30d1b8b2-bc92-4f54-a3fe-b915f5a0ce9d:read' # Navigation Items
+  - 'nestedentryfields.59bffd50-bf6c-4c93-851a-4bf659e49ffa:read' # Children
+  - 'nestedentryfields.360652e6-00ff-4774-b5c7-d9ad1331e09b:read' # Sections
+  - 'nestedentryfields.abdba094-401c-4d18-a918-e8d2e40dbdc9:read' # Collection
+  - 'nestedentryfields.92bae2f9-15a0-4712-a3df-69a3d0357913:read' # Social Links
+  - 'volumes.f9f4c0c9-6e35-42b7-91b6-232b6b0068a4:read' # Uploads
+  - 'globalsets.691eebac-34af-4bd3-bbd9-eac59b884edb:read' # Footer
+  - 'globalsets.0c783779-c106-449f-b292-e9dbd9f195e4:read' # Legal
+  - 'globalsets.56cd8fce-1035-4c04-9a6b-05704a65ca51:read' # SEO
+  - 'globalsets.6376b934-148c-462e-a7b6-d8d6877bacdc:read' # Error Page
+  - 'freeformForms.all:read'
+  - 'freeformForms.464b5690-3349-4956-a97c-f9d0ecc73d2e:read'
+  - 'freeformSubmissions.all:create'
+  - 'freeformSubmissions.464b5690-3349-4956-a97c-f9d0ecc73d2e:create'
+  - 'directive:transform'

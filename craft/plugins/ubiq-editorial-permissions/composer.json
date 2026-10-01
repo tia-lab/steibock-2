@@ -1,0 +1,20 @@
+{
+  "name": "ubiq/craft-editorial-permissions",
+  "description": "Per-field Matrix actions and entry-type permissions for Craft editors.",
+  "type": "craft-plugin",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.2",
+    "craftcms/cms": "~5.9.20"
+  },
+  "autoload": {
+    "psr-4": {
+      "ubiq\\editorialpermissions\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "UBIQ Editorial Permissions",
+    "handle": "ubiq-editorial-permissions",
+    "class": "ubiq\\editorialpermissions\\Plugin"
+  }
+}

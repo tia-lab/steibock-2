@@ -1,0 +1,45 @@
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:math';
+@use '../vars.generated.scss' as vars;
+
+@mixin fluid-responsive(
+	$font-from,
+	$font-to,
+	$vw-from,
+	$vw-to,
+	$scaling: false,
+	$last: false
+) {
+	$from: calc($vw-from / 100);
+	$to: calc($vw-to / 100);
+	$coefficient: calc(($font-to - $font-from) / ($to - $from));
+	$base: calc(($font-from - $from * $coefficient) / vars.$page-base);
+	@if ($scaling) {
+		html {
+			font-size: calc($base * 1rem + $coefficient * 1vw);
+		}
+		@media (width <= #{$vw-to}px) {
+			html {
+				font-size: calc($base * 1rem + $coefficient * 1vw);
+			}
+		}
+	} @else {
+		@if $last {
+			html {
+				font-size: calc($font-to / 16 * 1rem);
+			}
+			@media (width <= #{$vw-to}px) {
+				html {
+					font-size: calc($base * 1rem + $coefficient * 1vw);
+				}
+			}
+		} @else {
+			@media (width <= #{$vw-to}px) {
+				html {
+					font-size: calc($base * 1rem + $coefficient * 1vw);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  acdaa364-315d-43cb-991e-d2b4804ab4f1:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Items Limit
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a56c2991-ed41-4c87-a7b1-2b795aab904e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 028c68a9-8240-4b8c-94d5-bca16475d037 # Collection Order By
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4627c4c9-5b5a-462d-88e6-a4e5d246a49c
+            userCondition: null
+            warning: null
+            width: 50
+        name: Collection
+        uid: 12685b23-68d3-4eb9-b73a-d6a7d88e1d57
+        userCondition: null
+    thumbFieldKey: null
+handle: newsCollection
+hasTitleField: false
+icon: newspaper
+name: 'News Collection'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: News
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

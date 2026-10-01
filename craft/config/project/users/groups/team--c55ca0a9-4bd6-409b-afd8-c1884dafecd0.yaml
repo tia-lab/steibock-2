@@ -1,0 +1,20 @@
+description: null
+handle: team
+name: Team
+permissions:
+  - 'createentries:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'deletepeerentries:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'deletepeerentrydrafts:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'editglobalset:691eebac-34af-4bd3-bbd9-eac59b884edb' # Footer
+  - 'saveentries:60b20bac-64e8-4103-8fbb-afa9a4cfacf7' # Pages
+  - 'saveentries:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'savepeerentries:60b20bac-64e8-4103-8fbb-afa9a4cfacf7' # Pages
+  - 'savepeerentries:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'savepeerentrydrafts:60b20bac-64e8-4103-8fbb-afa9a4cfacf7' # Pages
+  - 'savepeerentrydrafts:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'viewentries:60b20bac-64e8-4103-8fbb-afa9a4cfacf7' # Pages
+  - 'viewentries:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'viewpeerentries:60b20bac-64e8-4103-8fbb-afa9a4cfacf7' # Pages
+  - 'viewpeerentries:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+  - 'viewpeerentrydrafts:60b20bac-64e8-4103-8fbb-afa9a4cfacf7' # Pages
+  - 'viewpeerentrydrafts:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News

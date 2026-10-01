@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 7c0872ca-cff9-4732-92b2-39c647480305 # Page
+  -
+    uid: 047d790c-1da1-4d54-ab65-39d5c2294dce # Collection Page
+  -
+    uid: 8525435f-ca62-40f9-ab52-df87683f66e9 # Legal Page
+handle: pages
+maxAuthors: 1
+name: Pages
+previewTargets:
+  -
+    label: 'Next Preview'
+    refresh: '1'
+    urlFormat: '$NEXT_PUBLIC_SITE_URL/api/preview?uri={uri}&secret=${CRAFT_PREVIEW_SECRET}'
+propagationMethod: all
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 3a6e7a7d-f421-49a8-b8b4-f9ab6af05498
+type: structure

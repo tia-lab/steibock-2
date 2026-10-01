@@ -1,0 +1,8 @@
+export { Footer } from './Footer'
+export { SectionAbout } from './SectionAbout'
+export { SectionContact } from './SectionContact'
+export { SectionContent } from './SectionContent'
+export { SectionCta } from './SectionCta'
+export { SectionHero } from './SectionHero'
+export { SectionNews } from './SectionNews'
+export { SectionRouter } from './SectionRouter'

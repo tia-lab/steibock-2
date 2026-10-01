@@ -1,0 +1,5 @@
+@forward './maps.generated';
+@forward './vars.generated';
+
+$font-primary: var(--font-primary);
+$font-secondary: var(--font-secondary);

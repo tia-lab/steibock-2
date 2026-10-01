@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: seoTitle
+instructions: 'Maximum 60 characters. Aim for about 6-10 words.'
+name: 'SEO Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 60
+  code: false
+  initialRows: 1
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

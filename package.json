@@ -1,0 +1,59 @@
+{
+	"name": "ubiq-next",
+	"version": "0.3.0",
+	"license": "UNLICENSED",
+	"private": true,
+	"scripts": {
+		"dev": "bun scripts/run-app.ts dev",
+		"dev:craft": "bun scripts/craft-dev.ts",
+		"dev:craft:stop": "cd craft && ddev stop",
+		"dev:craft:delete": "cd craft && ddev delete --omit-snapshot",
+		"dev:db:backup": "bun scripts/dev-db-backup.ts",
+		"bootstrap": "bun scripts/bootstrap.ts",
+		"env:create": "bun scripts/env-create.ts",
+		"build": "bun scripts/run-app.ts build",
+		"cf:setup": "bun scripts/cloudflare-setup.ts",
+		"cf:build": "bun scripts/run-app.ts cf:build",
+		"cf:preview": "bun scripts/run-app.ts cf:preview",
+		"cf:deploy": "bun scripts/run-app.ts cf:deploy",
+		"cf:upload": "bun scripts/run-app.ts cf:upload",
+		"cf:typegen": "bun scripts/run-app.ts cf:typegen",
+		"start": "bun scripts/run-app.ts start",
+		"lint": "bun scripts/run-app.ts lint && tsc -p tsconfig.scripts.json --noEmit",
+		"verify": "bun run lint",
+		"release": "bun scripts/release.ts",
+		"release:patch": "bun scripts/release.ts patch",
+		"release:minor": "bun scripts/release.ts minor",
+		"release:major": "bun scripts/release.ts major",
+		"css": "bun scripts/run-app.ts css",
+		"gql:schema": "bun scripts/run-app.ts gql:schema",
+		"gql:types": "bun scripts/run-app.ts gql:types",
+		"gql:check": "bun scripts/run-app.ts gql:check",
+		"gql:generate": "bun scripts/run-app.ts gql:generate",
+		"gql": "bun scripts/run-app.ts gql",
+		"craft:set-admin": "bun scripts/set-admin-user.ts",
+		"craft:push": "bun deploy/scripts/craft-remote-push.ts",
+		"craft:push:env": "bun deploy/scripts/craft-remote-env-push.ts",
+		"craft:pull": "bun deploy/scripts/craft-remote-pull.ts",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^18.4.1",
+		"@commitlint/config-conventional": "^18.4.0",
+		"@types/node": "^20.19.25",
+		"@types/react": "^19.2.7",
+		"eslint": "^9",
+		"husky": "^8.0.3",
+		"pino": "^10.3.1",
+		"pino-pretty": "^13.1.3",
+		"typescript": "^5.9.3"
+	},
+	"ignoreScripts": [
+		"sharp",
+		"unrs-resolver"
+	],
+	"trustedDependencies": [
+		"sharp",
+		"unrs-resolver"
+	]
+}

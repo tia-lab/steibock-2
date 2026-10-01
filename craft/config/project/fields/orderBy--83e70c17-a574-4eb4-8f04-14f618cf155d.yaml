@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: orderBy
+instructions: null
+name: 'Order By'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Newest
+        -
+          - value
+          - newest
+        -
+          - default
+          - true
+    -
+      __assoc__:
+        -
+          - label
+          - Oldest
+        -
+          - value
+          - oldest
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - Manual
+        -
+          - value
+          - manual
+        -
+          - default
+          - false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

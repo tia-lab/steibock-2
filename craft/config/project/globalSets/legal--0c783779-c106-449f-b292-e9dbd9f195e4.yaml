@@ -1,0 +1,126 @@
+fieldLayouts:
+  a87727c2-853b-4891-beee-fbb23db2a0b8:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0709009e-2c97-45fb-9c03-3cd4c18da6d1 # Cookie Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 106b78f8-5165-4d24-83ac-53b874491ae5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7de1aa36-fe1f-4d28-b98e-4d1e7123d0e9 # Rich Text
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6964d81-f30e-4aae-b784-f9c4b06ab464
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c52b9481-8800-4292-983a-63c4f4e18d3c # Cookie Consent Label
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af9d6f58-ea81-4471-a2c6-284a7acfdaf4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 40856d11-9184-4122-824f-1b3c8b5664d6 # Cookie Decline Label
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1779c7bc-410b-4a96-9009-5447d72b66c8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 761714be-3c30-422a-b665-6c6b24c16311 # Cookie Accept Label
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8cbee126-7a13-4701-ace8-d967f88acb9d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2400dc08-ae8a-4fdf-8a14-77a74d751656 # Cookie Retention Days
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79e5f477-617f-47f9-8945-9bf83b6824a8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 6f4fd0ee-dca6-41bc-9a7d-a027e3e1077f # Links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d0a11ea-deff-42f4-b05e-b5e09167c151
+            userCondition: null
+            warning: null
+            width: 100
+        name: Cookies
+        uid: 8254ab7b-2123-4175-8237-a70c47243f09
+        userCondition: null
+    thumbFieldKey: null
+handle: legal
+name: Legal
+sortOrder: 22

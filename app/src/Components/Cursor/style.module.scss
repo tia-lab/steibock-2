@@ -1,0 +1,29 @@
+@use '../../styles/export.scss' as *;
+
+.cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: $color-accent;
+	color: $color-primary;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	user-select: none;
+	z-index: 9999;
+	will-change: transform, opacity;
+	@include mobile {
+		display: none;
+	}
+}
+
+.label {
+	font-size: 0.625rem;
+	line-height: 1;
+	white-space: nowrap;
+}

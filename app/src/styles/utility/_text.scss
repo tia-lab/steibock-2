@@ -1,0 +1,45 @@
+$alignments: center, left, right;
+$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$styles: normal, italic, oblique;
+$decoration: underline, overline, line-through;
+$transform: capitalize, uppercase, lowercase;
+$wrap: nowrap;
+
+@each $alignment in $alignments {
+  .text-align-#{$alignment} {
+    text-align: $alignment;
+  }
+}
+
+@each $weight in $weights {
+  .font-weight-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+@each $style in $styles {
+  .text-style-#{$style} {
+    font-style: $style;
+  }
+}
+
+@each $d in $decoration {
+  .text-style-#{$d} {
+    text-decoration: $d;
+  }
+}
+
+@each $t in $transform {
+  .text-style-#{$t} {
+    text-transform: $t;
+  }
+}
+@each $w in $wrap {
+  .text-style-#{$w} {
+    white-space: $w;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+}

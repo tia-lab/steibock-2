@@ -1,0 +1,7 @@
+.preload {
+	position: fixed;
+	z-index: 10000;
+	inset: 0;
+	background: var(--color-primary);
+	pointer-events: auto;
+}

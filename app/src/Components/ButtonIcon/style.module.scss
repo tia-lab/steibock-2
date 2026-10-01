@@ -1,0 +1,33 @@
+@use '../../styles/export.scss' as *;
+
+.button {
+	aspect-ratio: 1;
+	border-radius: 999px;
+	flex-shrink: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > svg {
+		display: block;
+		width: 65%;
+		height: 65%;
+		stroke-width: 1.75;
+	}
+}
+
+.button.small {
+	width: 2rem;
+	padding: 0;
+}
+
+.button.medium {
+	width: 2.5rem;
+	padding: 0;
+}
+
+.button.large {
+	width: 3rem;
+	padding: 0;
+}

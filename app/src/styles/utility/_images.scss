@@ -1,0 +1,9 @@
+@use '../mixin/mixin.scss' as *;
+
+.object-fit {
+	@include object-fit;
+}
+
+.object-fit-wrap {
+	@include object-fit-wrap;
+}

@@ -1,0 +1,55 @@
+columnSuffix: null
+handle: collectionOrderBy
+instructions: null
+name: 'Collection Order By'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Newest
+        -
+          - value
+          - newest
+        -
+          - default
+          - true
+    -
+      __assoc__:
+        -
+          - label
+          - Oldest
+        -
+          - value
+          - oldest
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - 'Title A-Z'
+        -
+          - value
+          - titleAsc
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - 'Title Z-A'
+        -
+          - value
+          - titleDesc
+        -
+          - default
+          - false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

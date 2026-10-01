@@ -1,0 +1,17 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section3 0 $space-section1 0;
+
+	.content {
+		grid-column: span 6;
+		margin-right: $space-md;
+		display: flex;
+		flex-direction: column;
+		gap: $space-sm;
+	}
+
+	.form {
+		grid-column: span 6;
+	}
+}

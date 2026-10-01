@@ -1,0 +1,15 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section3 0;
+
+	.content {
+		grid-column: 2 / span 10;
+		display: flex;
+		flex-direction: column;
+		gap: $space-md;
+		@include mobile {
+			grid-column: span 12;
+		}
+	}
+}

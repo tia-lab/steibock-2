@@ -1,0 +1,26 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 9f753c5c-df7d-4198-8a6c-682d90b5207b # Section Hero
+  -
+    uid: 8a95c56e-9efa-4c74-afa7-dc065b39c23a # Section About
+  -
+    uid: 98055765-f8b4-4c53-8033-574ac496e7d5 # Section CTA
+  -
+    uid: 245952a8-f5b6-4e30-a19f-46338a68a53c # Section Content
+  -
+    uid: 4eb068df-aa04-4606-9686-5d3cbd0b22c6 # Section Contact
+  -
+    uid: 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # Section News
+handle: reusableSections
+maxAuthors: 1
+name: 'Reusable Sections'
+propagationMethod: all
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

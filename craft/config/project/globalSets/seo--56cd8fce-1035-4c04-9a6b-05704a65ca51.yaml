@@ -1,0 +1,250 @@
+fieldLayouts:
+  da3b3f88-f589-4993-92c8-d90b849cffcf:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3dcac174-bb6b-4c2c-acb8-de74578c755b # Site Name
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1549e03a-710f-4740-848f-ce95ad3cd243
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cc27f2f7-dfd4-473e-84dc-55e427d9a760 # Site Description
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 280ab06c-cc47-451a-acd4-f19a7f71553b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cc847517-7cfd-44f9-884b-318372b330fa # Default SEO Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3fe16cc-5f79-4fc1-a9cd-0ecfc0209ef3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2be78dad-4780-441e-b800-2fd65f4f84a4 # Default SEO Description
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9dfdf75-49d3-4ce2-9c54-13ae5717ebb3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 08472c25-ee36-4010-8ffd-3df84262af96 # Default SEO Image
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 508c7425-f67f-4550-8cba-11826e02c07c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f046d89c-37a5-44f5-a999-99a5dd9037cc # Default Open Graph Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a84c4f2-7d51-4e1d-9d9a-c3d7305aea81
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f5cc8cb0-96e4-4795-8a11-a599ca2995eb # Default Open Graph Description
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca493e91-bb37-4f81-b348-48f9e2924634
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9735e09a-b9e8-491d-b37b-0e0d556f50f2 # Default Open Graph Image
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73e1b21d-7a06-4c27-9bb8-b27efd529406
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'SEO Defaults'
+        uid: 2c127bef-5184-4652-a96d-48b09d2bdfe7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f7e9a795-2fca-4dee-b1ff-b66cf280990e # Favicon SVG
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44be6a8b-1497-4689-90a6-e58be1bb947e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b88f675c-8386-4f57-b056-bf9d8baa5c9e # Favicon 96x96
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73425897-7d14-4dac-b1c3-a94c9e4b3b18
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 16550f6c-63a5-468e-a055-9907dd56c0e8 # Apple Touch Icon
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22c27c5b-6012-4007-b210-b4fc0f6542da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a92d8ad3-9681-46d4-a928-611299644e87 # Web App Manifest 192x192
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cdf25c24-7e20-4b37-ba22-5568b751e3f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 715e5a51-2413-4918-8f6e-6a86b178fbfd # Web App Manifest 512x512
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5079e45a-4a01-4c8f-9bba-d020a6c30a0d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Icons
+        uid: 098a3d02-6923-4455-960a-d3ddfcb505fe
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f2759f08-c933-493b-969f-a5df28857eeb # LLMs Text
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 629641b7-98f6-40f8-82ce-7c78c61be102
+            userCondition: null
+            warning: null
+            width: 100
+        name: LLMs
+        uid: 4c2a50a0-6bab-46d9-a9ea-d6a848bc3960
+        userCondition: null
+    thumbFieldKey: null
+handle: seo
+name: SEO
+sortOrder: 23

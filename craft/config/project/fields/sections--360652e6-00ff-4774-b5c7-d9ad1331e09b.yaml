@@ -1,0 +1,77 @@
+columnSuffix: null
+handle: sections
+instructions: null
+name: Sections
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 9f753c5c-df7d-4198-8a6c-682d90b5207b # Section Hero
+        -
+          - group
+          - Sections
+    -
+      __assoc__:
+        -
+          - uid
+          - 8a95c56e-9efa-4c74-afa7-dc065b39c23a # Section About
+        -
+          - group
+          - Sections
+    -
+      __assoc__:
+        -
+          - uid
+          - 98055765-f8b4-4c53-8033-574ac496e7d5 # Section CTA
+        -
+          - group
+          - Sections
+    -
+      __assoc__:
+        -
+          - uid
+          - 245952a8-f5b6-4e30-a19f-46338a68a53c # Section Content
+        -
+          - group
+          - Sections
+    -
+      __assoc__:
+        -
+          - uid
+          - 4eb068df-aa04-4606-9686-5d3cbd0b22c6 # Section Contact
+        -
+          - group
+          - Sections
+    -
+      __assoc__:
+        -
+          - uid
+          - 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # Section News
+        -
+          - group
+          - Sections
+    -
+      __assoc__:
+        -
+          - uid
+          - 56d14e66-247f-45a4-9a20-0dd5eb33d4bc # Section Reference
+        -
+          - group
+          - Sections
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

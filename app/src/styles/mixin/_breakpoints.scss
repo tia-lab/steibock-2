@@ -1,0 +1,34 @@
+@use '../vars.scss' as *;
+
+// Breakpoint
+$mobile-breakpoint: $breakpoint-mobile;
+
+@mixin mobile {
+	@media (max-width: #{$mobile-breakpoint - 1px}) {
+		@content;
+	}
+}
+
+@mixin hide-mobile {
+	@include mobile {
+		display: none;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$mobile-breakpoint}) {
+		@content;
+	}
+}
+
+@mixin greater-main-wrapper {
+	@media (min-width: #{$page-max-width}) {
+		@content;
+	}
+}
+
+@mixin hide-desktop {
+	@include desktop {
+		display: none;
+	}
+}

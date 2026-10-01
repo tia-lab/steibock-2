@@ -1,0 +1,19 @@
+columnSuffix: null
+handle: itemsLimit
+instructions: null
+name: 'Items Limit'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 6
+  max: 24
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  step: 1
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

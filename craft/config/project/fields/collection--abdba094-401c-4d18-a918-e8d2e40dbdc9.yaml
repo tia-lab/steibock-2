@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: collection
+instructions: 'Choose the collection rendered by this page.'
+name: Collection
+searchable: false
+settings:
+  createButtonLabel: 'Choose a collection'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 4c12bdf9-f8b7-4605-8d4b-eb70638cd78e # News Collection
+        -
+          - group
+          - Collections
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

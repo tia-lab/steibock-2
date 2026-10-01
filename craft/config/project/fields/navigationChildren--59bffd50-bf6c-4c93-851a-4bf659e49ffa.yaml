@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: navigationChildren
+instructions: 'Optional child links. Rendering is limited by the navigation Max Depth setting.'
+name: Children
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 0e544297-04b4-4581-8a6a-08c532487db9 # Navigation Item
+        -
+          - group
+          - Navigation
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

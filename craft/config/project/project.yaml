@@ -1,0 +1,568 @@
+dateModified: 1789043114
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      page: Entries
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Structures
+      key: 'heading:59653462-043e-43be-939a-b2e357d1ed37'
+      page: Entries
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:60b20bac-64e8-4103-8fbb-afa9a4cfacf7' # Pages
+      page: Entries
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Channels
+      key: 'heading:bc5d20ee-231c-4107-954e-efc700af4815'
+      page: Entries
+      type: heading
+    -
+      key: 'section:2ff02e44-9d61-41bd-bf2c-5d7434a838d2' # Navigations
+      page: Entries
+      type: native
+    -
+      key: 'section:bbe74a36-5c8c-4b60-8191-579ce8df7265' # News
+      page: Entries
+      type: native
+    -
+      key: 'section:0e026e73-9c8a-42a9-8750-396dc0f8f17a' # Reusable Sections
+      page: Entries
+      type: native
+email:
+  fromEmail: mattiachiesa87@gmail.com
+  fromName: 'Ubiq Next'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    0c783779-c106-449f-b292-e9dbd9f195e4: Legal # Legal
+    0e026e73-9c8a-42a9-8750-396dc0f8f17a: 'Reusable Sections' # Reusable Sections
+    0e544297-04b4-4581-8a6a-08c532487db9: 'Navigation Item' # Navigation Item
+    1c5ecf2b-b376-4c3e-9fe7-37f8763ae1f7: 'About Variant' # About Variant
+    1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: 'Ubiq Next' # Ubiq Next
+    2be78dad-4780-441e-b800-2fd65f4f84a4: 'Default SEO Description' # Default SEO Description
+    2fbc1e92-b23b-43af-9e98-0cbc96b8d39f: 'Open Graph Image' # Open Graph Image
+    2ff02e44-9d61-41bd-bf2c-5d7434a838d2: Navigations # Navigations
+    3a7839ca-1b9e-45ee-ae3a-9379ce00e360: Standard # Standard
+    3af62cab-8b90-42ca-b80f-cd57a4fca5d5: Subtitle # Subtitle
+    3dcac174-bb6b-4c2c-acb8-de74578c755b: 'Site Name' # Site Name
+    3ddb6fa2-895e-4cb8-a071-da27e99b0b4a: 'Items Limit' # Items Limit
+    04a59516-2675-475c-a81f-2549be9366e5: 'SEO Image' # SEO Image
+    4c12bdf9-f8b7-4605-8d4b-eb70638cd78e: 'News Collection' # News Collection
+    4eb068df-aa04-4606-9686-5d3cbd0b22c6: 'Section Contact' # Section Contact
+    05cfa0aa-902b-4bd6-a461-bfc396b9a517: 'Selected News' # Selected News
+    6f4fd0ee-dca6-41bc-9a7d-a027e3e1077f: Links # Links
+    7c0872ca-cff9-4732-92b2-39c647480305: Page # Page
+    07d5f2ea-fbd3-42b3-bdfa-d74ef94bdf5e: 'Custom Spacing' # Custom Spacing
+    7de1aa36-fe1f-4d28-b98e-4d1e7123d0e9: 'Rich Text' # Rich Text
+    7f147fc9-f8a9-44a2-9323-4e858f671457: 'Social Link' # Social Link
+    8a95c56e-9efa-4c74-afa7-dc065b39c23a: 'Section About' # Section About
+    8f32eae1-0616-402f-a527-d44522fb6aae: NextJs # NextJs
+    8f90746f-df77-4301-8220-07d63cdbdd52: Form # Form
+    9f753c5c-df7d-4198-8a6c-682d90b5207b: 'Section Hero' # Section Hero
+    028c68a9-8240-4b8c-94d5-bca16475d037: 'Collection Order By' # Collection Order By
+    30d1b8b2-bc92-4f54-a3fe-b915f5a0ce9d: 'Navigation Items' # Navigation Items
+    47b26259-cee1-4c6d-8ec3-c5c6afc21a85: Small # Small
+    047d790c-1da1-4d54-ab65-39d5c2294dce: 'Collection Page' # Collection Page
+    56cd8fce-1035-4c04-9a6b-05704a65ca51: SEO # SEO
+    56d14e66-247f-45a4-9a20-0dd5eb33d4bc: 'Section Reference' # Section Reference
+    59bf264f-4eab-4829-966f-7d3d61a834d9: 'Is External' # Is External
+    59bffd50-bf6c-4c93-851a-4bf659e49ffa: Children # Children
+    60b20bac-64e8-4103-8fbb-afa9a4cfacf7: Pages # Pages
+    63b4f0ed-ea91-4662-bd31-c4d993c26bfe: 'Space Top' # Space Top
+    83e70c17-a574-4eb4-8f04-14f618cf155d: 'Order By' # Order By
+    92bae2f9-15a0-4712-a3df-69a3d0357913: 'Social Links' # Social Links
+    190d84fe-9150-47fa-a799-9aafa94ce657: 'Page Link' # Page Link
+    468b7c7a-9f24-4127-958e-f732504f8629: 'External URL' # External URL
+    597f5647-6a7f-43ea-ad1c-d9d5fcbd521e: 'Section News' # Section News
+    691eebac-34af-4bd3-bbd9-eac59b884edb: Footer # Footer
+    715e5a51-2413-4918-8f6e-6a86b178fbfd: 'Web App Manifest 512x512' # Web App Manifest 512x512
+    757e5334-e6b1-4d54-be32-dc1508ee4b08: 'Link Target' # Link Target
+    995d932b-127f-46ae-9dd8-291ff43abf1e: Link # Link
+    2400dc08-ae8a-4fdf-8a14-77a74d751656: 'Cookie Retention Days' # Cookie Retention Days
+    4660a8ef-7384-4e04-8d51-b1ed7a1ebeef: 'Error Page Title' # Error Page Title
+    6376b934-148c-462e-a7b6-d8d6877bacdc: 'Error Page' # Error Page
+    6750f06b-6790-4e70-8f04-58365c061d36: Navigation # Navigation
+    8108f4f8-30f0-478c-8560-657c3b5baaf5: 'Open Graph Description' # Open Graph Description
+    8276a78e-fefc-4592-89f9-dc8253802660: Address # Address
+    08472c25-ee36-4010-8ffd-3df84262af96: 'Default SEO Image' # Default SEO Image
+    9735e09a-b9e8-491d-b37b-0e0d556f50f2: 'Default Open Graph Image' # Default Open Graph Image
+    16550f6c-63a5-468e-a055-9907dd56c0e8: 'Apple Touch Icon' # Apple Touch Icon
+    40856d11-9184-4122-824f-1b3c8b5664d6: 'Cookie Decline Label' # Cookie Decline Label
+    80449db7-9d3f-481c-a438-64d7616f2102: 'Space Bottom' # Space Bottom
+    181882b1-9cfc-4e14-abba-b02e469f7239: 'No Follow' # No Follow
+    245952a8-f5b6-4e30-a19f-46338a68a53c: 'Section Content' # Section Content
+    360652e6-00ff-4774-b5c7-d9ad1331e09b: Sections # Sections
+    0709009e-2c97-45fb-9c03-3cd4c18da6d1: 'Cookie Title' # Cookie Title
+    761714be-3c30-422a-b665-6c6b24c16311: 'Cookie Accept Label' # Cookie Accept Label
+    973111aa-302d-473b-be52-7df5560b7056: 'Footer Navigation' # Footer Navigation
+    8525435f-ca62-40f9-ab52-df87683f66e9: 'Legal Page' # Legal Page
+    15008193-42c3-40a4-ad33-16aa7d1415ff: Large # Large
+    94611176-dc23-4b3b-b517-57ef2d20385c: Phone # Phone
+    98055765-f8b4-4c53-8033-574ac496e7d5: 'Section CTA' # Section CTA
+    a6ebaa54-ff7f-44bb-bfbe-2850b62c9c72: 'News Variant' # News Variant
+    a92d8ad3-9681-46d4-a928-611299644e87: 'Web App Manifest 192x192' # Web App Manifest 192x192
+    a471e9be-fe4f-4c4e-9088-abd5a9e070a7: 'Page SEO' # Page SEO
+    abdba094-401c-4d18-a918-e8d2e40dbdc9: Collection # Collection
+    b88f675c-8386-4f57-b056-bf9d8baa5c9e: 'Favicon 96x96' # Favicon 96x96
+    bbe63ff6-f6c8-4d3f-9f3f-73af141d9aaf: 'SEO Description' # SEO Description
+    bbe74a36-5c8c-4b60-8191-579ce8df7265: News # News
+    c52b9481-8800-4292-983a-63c4f4e18d3c: 'Cookie Consent Label' # Cookie Consent Label
+    c55ca0a9-4bd6-409b-afd8-c1884dafecd0: Team # Team
+    c284b6a7-ad21-48f7-899c-c0a35b3fd207: Email # Email
+    c7050a81-352d-4f95-b1b2-c96b6137211b: 'Open Graph Title' # Open Graph Title
+    c53284b8-99de-45cd-86fd-7bf399e7f805: 'Public Schema' # Public Schema
+    cc27f2f7-dfd4-473e-84dc-55e427d9a760: 'Site Description' # Site Description
+    cc847517-7cfd-44f9-884b-318372b330fa: 'Default SEO Title' # Default SEO Title
+    cf9b5a7b-9ee4-4567-b285-1e5a9007fc4c: 'Open in New Tab' # Open in New Tab
+    cff542a3-5638-4c43-b797-f7d1663c7588: Simple # Simple
+    d06d3ffa-3ff6-458e-ae0f-9941de22328d: 'Navigation Handle' # Navigation Handle
+    d9af3711-15b0-40ad-b91a-a78c305be464: 'Company Name' # Company Name
+    dc0fd7ba-be3a-4b97-a603-e120af95ac8c: Excerpt # Excerpt
+    e1c90914-8878-4287-92af-bfa5509c7370: 'Ubiq Next' # Ubiq Next
+    f046d89c-37a5-44f5-a999-99a5dd9037cc: 'Default Open Graph Title' # Default Open Graph Title
+    f2f4b934-d98c-4b29-a15f-8d138b5def52: 'Referenced Section' # Referenced Section
+    f5cc8cb0-96e4-4795-8a11-a599ca2995eb: 'Default Open Graph Description' # Default Open Graph Description
+    f7e9a795-2fca-4dee-b1ff-b66cf280990e: 'Favicon SVG' # Favicon SVG
+    f9f4c0c9-6e35-42b7-91b6-232b6b0068a4: Uploads # Uploads
+    f123fc1c-ece7-4bf7-959f-1beb81d601f5: 'Max Depth' # Max Depth
+    f449dbcf-eb13-43c8-a358-c47c6c2bc803: 'SEO Title' # SEO Title
+    f471f094-85f5-49d8-ba7a-40f531353884: 'No Index' # No Index
+    f2759f08-c933-493b-969f-a5df28857eeb: 'LLMs Text' # LLMs Text
+    f1720845-8ddc-4032-bddc-1cd1eb098b56: Text # Text
+    fab058e5-ef2f-410f-8760-89791a63a127: News # News
+    fe1e327f-f713-41a4-8ed3-eaac7c941b7b: Image # Image
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cp-css:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      additionalCss: ''
+      cacheBusting: true
+      cssFile: /cpubiq/ubiq_cp.css
+  default-dashboard:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  freeform:
+    edition: lite
+    enabled: true
+    licenseKey: T8WUNGLL27OCO7E00HOLT75O
+    schemaVersion: 5.15.1
+    settings:
+      alertNotificationRecipients: null
+      allowDashesInFieldHandles: false
+      allowFileTemplateEdit: '1'
+      autoScroll: true
+      autoScrollToErrors: true
+      badgeType: all
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
+      clientDigestFrequency: 1
+      clientDigestRecipients: null
+      defaultFromEmail: "{{ craft.app.projectConfig.get('email.fromEmail') }}"
+      defaultFromName: "{{ craft.app.projectConfig.get('email.fromName') }}"
+      defaultView: forms
+      defaults:
+        __assoc__:
+          -
+            - previewHtml
+            - true
+          -
+            - twigInHtml
+            - true
+          -
+            - twigIsolation
+            - true
+          -
+            - includeSampleTemplates
+            - true
+          -
+            - notifications
+            -
+              __assoc__:
+                -
+                  - admin
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - conditional
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - userSelect
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                -
+                  - emailField
+                  -
+                    __assoc__:
+                      -
+                        - template
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+          -
+            - settings
+            -
+              __assoc__:
+                -
+                  - general
+                  -
+                    __assoc__:
+                      -
+                        - formType
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - submissionTitle
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - '{{ dateCreated|date("Y-m-d H:i:s") }}'
+                      -
+                        - formattingTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - basic-light/index.twig
+                -
+                  - dataStorage
+                  -
+                    __assoc__:
+                      -
+                        - storeData
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - defaultStatus
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 2
+                      -
+                        - collectIp
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                -
+                  - processing
+                  -
+                    __assoc__:
+                      -
+                        - ajax
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showIndicator
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - showText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - true
+                      -
+                        - processingText
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - Processing...
+                -
+                  - successAndErrors
+                  -
+                    __assoc__:
+                      -
+                        - successBehavior
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - reload
+                      -
+                        - returnUrl
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successTemplate
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - ''
+                      -
+                        - successMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Form has been submitted successfully!'
+                      -
+                        - errorMessage
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - 'Sorry, there was an error submitting the form. Please try again.'
+                -
+                  - limits
+                  -
+                    __assoc__:
+                      -
+                        - duplicateCheck
+                        -
+                          __assoc__:
+                            -
+                              - locked
+                              - false
+                            -
+                              - value
+                              - no_limit
+      digestFrequency: 1
+      digestOnlyOnProduction: false
+      digestRecipients: null
+      displayFeed: true
+      emailTemplateDefault: database
+      emailTemplateDirectory: _emails
+      emailTemplateMethod: global
+      emailTemplateStorageType: files_database
+      exportHandlesAsNames: false
+      exportLabels: false
+      fillWithGet: false
+      footerScripts: false
+      formFieldShowOnlyAllowedForms: false
+      formSubmitDisable: true
+      formSubmitExpiration: null
+      formTemplateDirectory: ''
+      formattingTemplate: basic-light/index.twig
+      minimumSubmitTime: null
+      pluginName: null
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
+      queuePriority: null
+      rememberPageSubmitOrder: true
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
+      scriptInsertLocation: footer
+      scriptInsertType: files
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      sitesEnabled: false
+      spamFolderEnabled: true
+      spamProtectionBehavior: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+      successTemplateDirectory: ''
+      updateSearchIndexes: true
+      useQueueForEmailNotifications: false
+      useQueueForIntegrations: false
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      assetSourceSettings:
+        1:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+      enabled: true
+      imageHeight: 2048
+      imageQuality: 100
+      imageWidth: 2048
+      nonDestructiveCrop: false
+      nonDestructiveResize: false
+      skipLarger: true
+      useGlobalSettings: true
+  tablemaker:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  ubiq-editorial-permissions:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      managedEntryTypesBySectionUid:
+        __assoc__:
+          -
+            - 60b20bac-64e8-4103-8fbb-afa9a4cfacf7 # Pages
+            -
+              - 7c0872ca-cff9-4732-92b2-39c647480305 # Page
+              - 047d790c-1da1-4d54-ab65-39d5c2294dce # Collection Page
+              - 8525435f-ca62-40f9-ab52-df87683f66e9 # Legal Page
+      managedMatrixFieldUids:
+        - 360652e6-00ff-4774-b5c7-d9ad1331e09b # Sections
+system:
+  edition: team
+  live: true
+  name: 'Ubiq Next'
+  retryDuration: null
+  schemaVersion: 5.9.0.8
+  timeZone: Europe/Zurich

@@ -1,0 +1,204 @@
+columnSuffix: null
+handle: pageSeo
+instructions: 'Optional page-specific SEO settings. Leave fields empty to use the global SEO defaults.'
+name: 'Page SEO'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 96748d43-9b43-4b58-a508-e34c17cdb7f0
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - cd908695-d203-41a4-b958-972baacd6e5a
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            -
+                              - type
+                              - craft\fieldlayoutelements\LineBreak
+                            -
+                              - dateAdded
+                              - '2026-08-25T10:53:00+00:00'
+                            -
+                              - uid
+                              - 8f41bc54-3cf5-4867-8eda-c74f33857d45
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 100
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - 8d843ff9-7f19-41b6-9d9f-66433b9987c4
+                            12:
+                              - fieldUid
+                              - f449dbcf-eb13-43c8-a358-c47c6c2bc803 # SEO Title
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 100
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - f7dee0a4-79c9-4349-bb9d-ca8591c8664e
+                            12:
+                              - fieldUid
+                              - bbe63ff6-f6c8-4d3f-9f3f-73af141d9aaf # SEO Description
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 100
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - ccd3e8af-675d-47cd-9b38-501616a5de89
+                            12:
+                              - fieldUid
+                              - 04a59516-2675-475c-a81f-2549be9366e5 # SEO Image
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 100
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - ffee06f5-af16-47aa-97f6-9b198802cba4
+                            12:
+                              - fieldUid
+                              - c7050a81-352d-4f95-b1b2-c96b6137211b # Open Graph Title
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 100
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - c3421d0b-539b-4d93-8479-e657ed606232
+                            12:
+                              - fieldUid
+                              - 8108f4f8-30f0-478c-8560-657c3b5baaf5 # Open Graph Description
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 100
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - 076cc8a9-29dd-4ae1-8d27-d3f39d78c1d1
+                            12:
+                              - fieldUid
+                              - 2fbc1e92-b23b-43af-9e98-0cbc96b8d39f # Open Graph Image
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 50
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - 361b9d26-cfe6-4c07-ac0b-f9d8993d44f0
+                            12:
+                              - fieldUid
+                              - f471f094-85f5-49d8-ba7a-40f531353884 # No Index
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - width
+                              - 50
+                            8:
+                              - dateAdded
+                              - '2026-08-25T10:48:47+00:00'
+                            9:
+                              - uid
+                              - 58e4b69f-0ff7-49fa-ac8f-8eada0d43292
+                            12:
+                              - fieldUid
+                              - 181882b1-9cfc-4e14-abba-b02e469f7239 # No Follow
+            4:
+              - cardThumbAlignment
+              - end
+  viewMode: inline
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

@@ -1,0 +1,81 @@
+{% import '_includes/forms.twig' as forms %}
+
+<p>Select the fields and entry types to manage. Regular users need explicit grants for selected actions in Craft's user permissions. Existing content remains editable. Administrators are always exempt.</p>
+<p>To prevent all new pages, disable <strong>Create entries</strong> in the relevant native section permissions.</p>
+{% for error in staleErrors %}
+  <p class="warning">{{ error }} Review the selections before saving.</p>
+{% endfor %}
+
+<h2>Matrix exceptions</h2>
+<p>Allow selected actions for one group on a specific page or on every page of an entry type. Rules combine with existing grants. They apply to the selected Matrix field anywhere inside the page, including drafts. Other pages keep their normal restrictions.</p>
+<p>Exceptions apply only to fields selected under Matrix fields. They do not grant access to edit a page or permission to create pages. Duplicate/paste also requires Add.</p>
+{% set groupOptions = [{label: 'Choose group', value: ''}] %}
+{% for group in groups %}
+  {% set groupOptions = groupOptions|merge([{label: group.name, value: group.uid}]) %}
+{% endfor %}
+{% set exceptionFields = [{label: 'Choose Matrix field', value: ''}] %}
+{% for field in fields %}
+  {% set exceptionFields = exceptionFields|merge([{label: field.name, value: field.uid}]) %}
+{% endfor %}
+{% set targets = [{label: 'Choose page or entry type', value: ''}] %}
+{% for section in sections %}
+  {% for type in section.getEntryTypes() %}
+    {% set targets = targets|merge([{label: 'Type: ' ~ section.name ~ ' / ' ~ type.name, value: 'type:' ~ section.uid ~ ':' ~ type.uid}]) %}
+  {% endfor %}
+{% endfor %}
+{% for page in pages %}
+  {% set targets = targets|merge([{label: 'Page: ' ~ page.section.name ~ ' / ' ~ page.title ~ ' (#' ~ page.id ~ ')', value: 'entry:' ~ page.uid}]) %}
+{% endfor %}
+{{ forms.editableTableField({
+  label: 'Allowed Matrix actions',
+  id: 'matrix-exceptions',
+  name: 'matrixExceptions',
+  instructions: 'An unchecked action adds no exception. Remove a row to remove its grants. Administrators are always exempt.',
+  cols: {
+    fieldUid: {heading: 'Matrix field', type: 'select', options: exceptionFields},
+    groupUid: {heading: 'Group', type: 'select', options: groupOptions},
+    target: {heading: 'Page or entry type', type: 'select', options: targets},
+    add: {heading: 'Add', type: 'checkbox'},
+    delete: {heading: 'Delete', type: 'checkbox'},
+    reorder: {heading: 'Reorder', type: 'checkbox'},
+    'duplicate-paste': {heading: 'Duplicate/paste', type: 'checkbox'},
+    'toggle-enabled': {heading: 'Enable/disable', type: 'checkbox'}
+  },
+  rows: settings.matrixExceptions,
+  allowAdd: true,
+  allowDelete: true,
+  allowReorder: false,
+  addRowLabel: 'Add exception',
+  errors: settings.getErrors('matrixExceptions')
+}) }}
+
+{{ hiddenInput('managedMatrixFieldUids', '') }}
+{% set matrixOptions = [] %}
+{% for field in fields %}
+  {% set matrixOptions = matrixOptions|merge([{label: field.name ~ ' [' ~ field.handle ~ ']', value: field.uid}]) %}
+{% endfor %}
+{{ forms.checkboxGroupField({
+  label: 'Matrix fields',
+  instructions: 'Selected fields require grants to add, delete, reorder, duplicate/paste, or enable/disable entries.',
+  name: 'managedMatrixFieldUids',
+  options: matrixOptions,
+  values: settings.managedMatrixFieldUids,
+  errors: settings.getErrors('managedMatrixFieldUids')
+}) }}
+
+<h2>Page entry types</h2>
+<p>Selected types require grants for creation and switching to that type. Existing pages stay visible and editable. Select every type in a section to control all type switching.</p>
+{{ hiddenInput('managedEntryTypesBySectionUid', '') }}
+{% for section in sections %}
+  {% set typeOptions = [] %}
+  {% for type in section.getEntryTypes() %}
+    {% set typeOptions = typeOptions|merge([{label: type.name, value: type.uid}]) %}
+  {% endfor %}
+  {{ forms.checkboxGroupField({
+    label: section.name,
+    name: 'managedEntryTypesBySectionUid[' ~ section.uid ~ ']',
+    options: typeOptions,
+    values: settings.managedEntryTypesBySectionUid[section.uid] ?? [],
+    errors: settings.getErrors('managedEntryTypesBySectionUid')
+  }) }}
+{% endfor %}

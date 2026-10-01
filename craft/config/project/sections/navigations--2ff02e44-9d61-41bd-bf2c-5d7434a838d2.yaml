@@ -1,0 +1,16 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 6750f06b-6790-4e70-8f04-58365c061d36 # Navigation
+handle: navigations
+maxAuthors: 1
+name: Navigations
+propagationMethod: all
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: linkTarget
+instructions: null
+name: 'Link Target'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Self
+        -
+          - value
+          - self
+        -
+          - default
+          - true
+    -
+      __assoc__:
+        -
+          - label
+          - Blank
+        -
+          - value
+          - blank
+        -
+          - default
+          - false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

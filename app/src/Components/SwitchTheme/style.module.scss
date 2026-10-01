@@ -1,0 +1,9 @@
+@use '../../styles/export.scss' as *;
+
+.button {
+	background-color: $color-secondary;
+	width: $space-xs;
+	height: $space-xs;
+	border: none;
+	cursor: pointer;
+}

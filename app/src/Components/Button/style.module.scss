@@ -1,0 +1,76 @@
+@use '../../styles/export.scss' as *;
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.85rem 1.25rem;
+	border: 2px solid $color-secondary;
+	background: $color-secondary;
+	color: $color-primary;
+	font-size: 0.875rem;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	box-sizing: border-box;
+	transition:
+		background-color $duration-short $ease-out,
+		color $duration-short $ease-out,
+		border-color $duration-short $ease-out,
+		opacity $duration-short $ease-out;
+
+	&:visited {
+		color: $color-primary;
+	}
+
+	&:hover {
+		background: $color-accent;
+		border-color: $color-accent;
+		color: $color-primary;
+	}
+
+	&:disabled {
+		opacity: 0.35;
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+}
+
+.button_primary {
+	background: $color-secondary;
+	color: $color-primary;
+	border-color: $color-secondary;
+}
+
+.outline {
+	background: transparent;
+	color: $color-secondary;
+	border-color: $color-stroke;
+
+	&:visited {
+		color: $color-secondary;
+	}
+
+	&:hover {
+		background: $color-accent;
+		border-color: $color-accent;
+		color: $color-primary;
+	}
+}
+
+.small {
+	padding: 0.7rem 1rem;
+	font-size: 0.75rem;
+}
+
+.medium {
+	padding: 0.85rem 1.25rem;
+}
+
+.large {
+	padding: 1rem 1.5rem;
+	font-size: 0.9375rem;
+}

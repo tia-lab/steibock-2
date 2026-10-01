@@ -1,0 +1,18 @@
+@use '../vars.scss' as vars;
+@use '../mixin/mixin.scss' as mixin;
+.hidden,
+.hide {
+  display: none;
+}
+
+.hide-mobile {
+  @include mixin.mobile {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @include mixin.desktop {
+    display: none;
+  }
+}

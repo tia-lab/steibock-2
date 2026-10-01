@@ -1,0 +1,108 @@
+@use '../../styles/export.scss' as *;
+
+.sidebar {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+
+	left: 0;
+	top: 0;
+	backdrop-filter: blur(6px);
+	z-index: 500;
+	display: none;
+	opacity: 0;
+	padding: var(--space-md);
+	color: var(--color-primary);
+	overflow: hidden;
+	@include mobile {
+		padding: 0;
+	}
+
+	&.open {
+		display: flex;
+	}
+
+	.panel {
+		width: 100%;
+		max-width: 50rem;
+		height: 100%;
+		top: 0;
+		position: absolute;
+		background: var(--color-primary);
+
+		z-index: 5;
+		padding: var(--space-md);
+		display: flex;
+		justify-content: flex-start;
+		overflow-x: hidden;
+		overflow-y: auto;
+		box-sizing: border-box;
+		overscroll-behavior: contain;
+
+		&.left {
+			left: 0;
+			border-right: 2px solid var(--color-primary);
+		}
+		&.right {
+			right: 0;
+			border-left: 2px solid var(--color-primary);
+		}
+
+		@include mobile {
+			width: 100%;
+			max-width: 100%;
+			height: 100%;
+			max-height: 100vh;
+			border: none;
+			border-radius: 0;
+		}
+
+		.panel_inner {
+			width: 100%;
+			min-height: 100%;
+			display: grid;
+			align-content: start;
+			padding-bottom: calc(var(--space-lg) + var(--space-md));
+			box-sizing: border-box;
+			background: var(--color-primary);
+
+			@include greater-main-wrapper {
+				max-width: 45rem;
+			}
+		}
+
+		@include mobile {
+			width: 100%;
+		}
+	}
+
+	.plus {
+		cursor: pointer;
+		top: var(--space-xs);
+		right: var(--space-xs);
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: var(--space-lg);
+		height: var(--space-lg);
+		justify-self: end;
+		transform: rotate(45deg);
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: rotate(135deg);
+		}
+
+		.line {
+			position: absolute;
+			width: var(--space-lg);
+			height: 2px;
+			background-color: var(--color-secondary);
+
+			&.is_2 {
+				transform: rotate(90deg);
+			}
+		}
+	}
+}

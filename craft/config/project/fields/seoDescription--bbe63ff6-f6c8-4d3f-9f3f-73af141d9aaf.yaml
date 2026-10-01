@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: seoDescription
+instructions: 'Maximum 160 characters. Aim for about 18-25 words.'
+name: 'SEO Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 160
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

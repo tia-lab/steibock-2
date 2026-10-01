@@ -1,0 +1,93 @@
+@use '../../styles/export.scss' as *;
+
+.slider {
+	--slider-gap: #{$space-xs};
+	--slider-slide-size: 100%;
+
+	display: grid;
+	grid-template-areas:
+		'viewport'
+		'footer';
+	gap: $space-xs;
+	min-width: 0;
+}
+
+.viewport {
+	grid-area: viewport;
+	min-width: 0;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	margin-left: calc(var(--slider-gap) * -1);
+	touch-action: pan-y pinch-zoom;
+}
+
+.slide {
+	flex: 0 0 var(--slider-slide-size);
+	min-width: 0;
+	padding-left: var(--slider-gap);
+}
+
+.footer {
+	grid-area: footer;
+	display: flex;
+	gap: $space-xs;
+	align-items: center;
+}
+
+.control {
+	padding: 0.5rem 0.75rem;
+	border-color: $color-secondary !important;
+	background: transparent !important;
+	color: $color-secondary !important;
+	font-size: 0.75rem;
+	line-height: 1;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:disabled {
+		opacity: 0.35;
+		cursor: not-allowed;
+	}
+}
+
+.dots {
+	display: flex;
+	flex: 1;
+	gap: $space-2xs;
+	justify-content: center;
+}
+
+.dot {
+	width: 0.5rem;
+	height: 0.5rem;
+	border: 1px solid $color-secondary;
+	border-radius: 999px;
+	cursor: pointer;
+	transition:
+		background-color $duration-short $ease-out,
+		opacity $duration-short $ease-out;
+}
+
+.dot_active {
+	background: $color-secondary;
+}
+
+.progress {
+	flex: 1;
+	height: 1px;
+	overflow: hidden;
+	background: $color-secondary-w-20;
+	transform: translateZ(0);
+}
+
+.progress_bar {
+	width: 100%;
+	height: 100%;
+	background: $color-secondary;
+	transform: scaleX(0);
+	transform-origin: left center;
+	transition: transform $duration-short $ease-out;
+}

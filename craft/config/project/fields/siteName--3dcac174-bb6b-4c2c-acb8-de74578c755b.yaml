@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: siteName
+instructions: 'Maximum 70 characters. Aim for about 4-8 words.'
+name: 'Site Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 70
+  code: false
+  initialRows: 1
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

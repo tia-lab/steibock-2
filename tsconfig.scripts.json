@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"allowImportingTsExtensions": true,
+		"baseUrl": ".",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"noEmit": true,
+		"noImplicitAny": true,
+		"paths": {
+			"@/*": [
+				"app/src/*"
+			]
+		},
+		"strict": true,
+		"target": "ES2022",
+		"types": [
+			"node",
+			"react"
+		]
+	},
+	"include": [
+		"deploy/scripts/**/*.ts",
+		"scripts/**/*.ts"
+	]
+}

@@ -1,0 +1,14 @@
+$display: grid, flex, block, inline, inline-block;
+$poistion: relative, absolute, fixed, sticky, static;
+
+@each $d in $display {
+  .#{$d} {
+    display: $d;
+  }
+}
+
+@each $p in $poistion {
+  .#{$p} {
+    position: $p;
+  }
+}

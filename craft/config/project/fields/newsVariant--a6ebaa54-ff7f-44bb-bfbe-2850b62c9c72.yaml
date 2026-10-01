@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: newsVariant
+instructions: null
+name: 'News Variant'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Slider
+        -
+          - value
+          - slider
+        -
+          - default
+          - true
+    -
+      __assoc__:
+        -
+          - label
+          - Grid
+        -
+          - value
+          - grid
+        -
+          - default
+          - false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

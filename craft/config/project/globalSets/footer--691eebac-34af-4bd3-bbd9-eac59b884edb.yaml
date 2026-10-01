@@ -1,0 +1,126 @@
+fieldLayouts:
+  f35f9154-5507-4e04-886d-13a3868e4fd0:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d9af3711-15b0-40ad-b91a-a78c305be464 # Company Name
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 10704ba0-5e7a-40d3-a5df-cfeee0f38d87
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8276a78e-fefc-4592-89f9-dc8253802660 # Address
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29f7757c-27f4-4d29-b458-7e5f89325232
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c284b6a7-ad21-48f7-899c-c0a35b3fd207 # Email
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9af8abb1-18f4-4876-b445-b5ed33e1821b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 94611176-dc23-4b3b-b517-57ef2d20385c # Phone
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff463bb7-b2f6-43b6-976b-3292377ca941
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 92bae2f9-15a0-4712-a3df-69a3d0357913 # Social Links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de4143cc-4dc9-4bcc-a9c9-b1a7fe574e31
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 6f4fd0ee-dca6-41bc-9a7d-a027e3e1077f # Links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fb2ecc06-3b7e-47e5-8c75-178ed1bf6dd5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 973111aa-302d-473b-be52-7df5560b7056 # Footer Navigation
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd3e55cc-7fa1-4cea-acf3-691ff9a0fb0f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3cb4d097-1b95-4b9d-b7d3-c12da0b31f70
+        userCondition: null
+    thumbFieldKey: null
+handle: footer
+name: Footer
+sortOrder: 21

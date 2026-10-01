@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: fab058e5-ef2f-410f-8760-89791a63a127 # News
+handle: news
+maxAuthors: 1
+name: News
+previewTargets:
+  -
+    label: 'Next Preview'
+    refresh: '1'
+    urlFormat: '$NEXT_PUBLIC_SITE_URL/api/preview?uri={uri}&secret=${CRAFT_PREVIEW_SECRET}'
+propagationMethod: all
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'news/{slug}'
+type: channel

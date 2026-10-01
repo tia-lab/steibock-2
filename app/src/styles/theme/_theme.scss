@@ -1,0 +1,77 @@
+@use '../export.scss' as *;
+
+@include fluid-responsive(16, 19, 1440, 1700, false, true);
+@include fluid-responsive(15.5, 26, 400, 767, false, false);
+
+html {
+	-webkit-text-size-adjust: 100%;
+	font-feature-settings: normal;
+	font-variation-settings: normal;
+}
+
+body {
+	background-color: $color-primary;
+	color: $color-secondary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.page-wrapper {
+	min-height: 100vh;
+	position: relative;
+	z-index: 1;
+}
+
+.main-wrapper {
+	position: relative;
+	z-index: 2;
+	max-width: $page-max-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $page-padding-global;
+	padding-right: $page-padding-global;
+	width: 100%;
+
+	&.is-fluid {
+		max-width: none;
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	&.is-fluid-left,
+	&.is-fluid-right {
+		$page-outside-gutter: max(calc((100vw - #{$page-max-width}) / 2), 0px);
+
+		width: calc(100vw - #{$page-outside-gutter});
+		max-width: none;
+	}
+
+	&.is-fluid-left {
+		margin-left: 0;
+		margin-right: auto;
+		padding-left: 0;
+	}
+
+	&.is-fluid-right {
+		margin-left: auto;
+		margin-right: 0;
+		padding-right: 0;
+	}
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat($container-columns, 1fr);
+	column-gap: $container-gap;
+	& .is-fluid {
+		margin-left: $page-padding-global;
+		margin-right: $page-padding-global;
+	}
+}
+
+section,
+.section {
+	position: relative;
+}

@@ -1,0 +1,44 @@
+columnSuffix: null
+handle: aboutVariant
+instructions: null
+name: 'About Variant'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Left
+        -
+          - value
+          - left
+        -
+          - default
+          - false
+    -
+      __assoc__:
+        -
+          - label
+          - Right
+        -
+          - value
+          - right
+        -
+          - default
+          - true
+    -
+      __assoc__:
+        -
+          - label
+          - Full
+        -
+          - value
+          - full
+        -
+          - default
+          - false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

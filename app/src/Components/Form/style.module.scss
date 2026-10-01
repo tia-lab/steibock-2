@@ -1,0 +1,104 @@
+@use '../../styles/export.scss' as *;
+
+.form {
+	display: grid;
+	gap: $space-sm;
+}
+
+.page {
+	display: grid;
+	gap: $space-sm;
+}
+
+.row {
+	display: grid;
+	gap: $space-sm;
+}
+
+.field {
+	display: grid;
+	gap: $space-2xs;
+}
+
+.label {
+	display: flex;
+	gap: 0.25em;
+}
+
+.input {
+	width: 100%;
+	border: 1px solid currentColor;
+	padding: 0.75rem 1rem;
+	background: transparent;
+	color: inherit;
+}
+
+.instructions {
+	color: $color-secondary-w-60;
+}
+
+.errors,
+.form_errors {
+	color: $color-error;
+}
+
+.success {
+	color: $color-success;
+}
+
+.errors {
+	display: grid;
+	gap: $space-2xs;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.form_errors,
+.success {
+	display: grid;
+	gap: $space-2xs;
+	padding: $space-xs;
+	border: 1px solid;
+	border-radius: 0.25rem;
+}
+
+.form_errors {
+	border-color: $color-error-alpha-60;
+	background: $color-error-alpha-20;
+}
+
+.success {
+	border-color: $color-success-alpha-60;
+	background: $color-success-alpha-20;
+}
+
+.option {
+	display: flex;
+	gap: $space-2xs;
+	align-items: center;
+}
+
+.options {
+	display: grid;
+	gap: $space-2xs;
+
+	&[data-one-line='true'] {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.html {
+	display: grid;
+	gap: $space-2xs;
+}
+
+.honeypot {
+	position: absolute;
+	left: -100vw;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	pointer-events: none;
+}

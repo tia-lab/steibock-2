@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: ogTitle
+instructions: 'Maximum 95 characters. Aim for about 10-16 words.'
+name: 'Open Graph Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 95
+  code: false
+  initialRows: 1
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

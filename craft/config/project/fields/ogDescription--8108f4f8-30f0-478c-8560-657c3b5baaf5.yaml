@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: ogDescription
+instructions: 'Maximum 200 characters. Aim for about 25-35 words.'
+name: 'Open Graph Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 200
+  code: false
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

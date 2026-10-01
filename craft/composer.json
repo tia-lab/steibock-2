@@ -1,0 +1,59 @@
+{
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "craftcms/ckeditor": "^4.11.1",
+    "craftcms/cms": "^5.9.12",
+    "doublesecretagency/craft-cpcss": "3.0.0",
+    "solspace/craft-freeform": "^5.14.16",
+    "ubiq/craft-editorial-permissions": "0.1.0",
+    "verbb/default-dashboard": "3.0.2",
+    "verbb/field-manager": "4.0.3",
+    "verbb/image-resizer": "4.0.4",
+    "verbb/tablemaker": "^5.0.7",
+    "vlucas/phpdotenv": "^5.4.0"
+  },
+  "require-dev": {
+    "craftcms/generator": "^2.0.0",
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/",
+      "ubiq\\": "modules/ubiqdashboard/src"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "craftcms/plugin-installer": true,
+      "yiisoft/yii2-composer": true
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "8.2"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
+    ]
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "plugins/ubiq-editorial-permissions",
+      "options": {
+        "symlink": false,
+        "versions": {
+          "ubiq/craft-editorial-permissions": "0.1.0"
+        }
+      }
+    },
+    {
+      "type": "composer",
+      "url": "https://composer.craftcms.com",
+      "canonical": false
+    }
+  ]
+}

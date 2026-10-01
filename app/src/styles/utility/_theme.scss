@@ -1,0 +1,11 @@
+@use 'sass:map';
+@use '../export.scss' as *;
+
+.padding-global {
+	@include desktop {
+		padding: 0 map.get($page, padding-global, desktop);
+	}
+	@include mobile {
+		padding: 0 map.get($page, padding-global, mobile);
+	}
+}

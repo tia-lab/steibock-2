@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.2.4
+
+      - name: Install root dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Install app dependencies
+        run: bun install --frozen-lockfile
+        working-directory: app
+
+      - name: Generate CSS tokens
+        run: bun css
+
+      - name: Lint
+        run: bun run lint
+
+      - name: Detect remote Craft GraphQL
+        id: craft
+        env:
+          CRAFT_GRAPHQL_ENDPOINT: ${{ secrets.CRAFT_GRAPHQL_ENDPOINT }}
+          CRAFT_GRAPHQL_TOKEN: ${{ secrets.CRAFT_GRAPHQL_TOKEN }}
+        run: |
+          if [ -z "$CRAFT_GRAPHQL_ENDPOINT" ] || [ -z "$CRAFT_GRAPHQL_TOKEN" ]; then
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "[ci] Remote Craft GraphQL secrets are not configured; skipping the Cloudflare build."
+            exit 0
+          fi
+
+          status="$(curl -sS -o /tmp/craft-graphql-check.json -w "%{http_code}" \
+            -X POST "$CRAFT_GRAPHQL_ENDPOINT" \
+            -H "Authorization: Bearer $CRAFT_GRAPHQL_TOKEN" \
+            -H "Content-Type: application/json" \
+            --data '{"query":"{ __typename }"}' || true)"
+
+          if [ "$status" = "200" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+            echo "[ci] Remote Craft GraphQL is available."
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "[ci] Remote Craft GraphQL is not available; HTTP status: $status"
+          fi
+
+      - name: Build Cloudflare Worker
+        if: steps.craft.outputs.available == 'true'
+        run: bun run cf:build
+        env:
+          NEXT_PUBLIC_SITE_URL: http://localhost:3000
+          CRAFT_GRAPHQL_ENDPOINT: ${{ secrets.CRAFT_GRAPHQL_ENDPOINT }}
+          CRAFT_GRAPHQL_TOKEN: ${{ secrets.CRAFT_GRAPHQL_TOKEN }}
+
+      - name: Report skipped Cloudflare build
+        if: steps.craft.outputs.available != 'true'
+        run: |
+          echo "[ci] Skipped the Cloudflare build because remote Craft GraphQL is unavailable."
+          echo "[ci] Local-safe checks completed: install, CSS generation, and lint."

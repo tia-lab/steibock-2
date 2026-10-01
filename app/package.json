@@ -1,0 +1,50 @@
+{
+	"name": "ubiq-next-app",
+	"version": "0.3.0",
+	"private": true,
+	"scripts": {
+		"dev": "bun scripts/run-dev.ts",
+		"dev:next": "bun run css && next dev",
+		"build": "bun run css && bun run gql:check && node node_modules/next/dist/bin/next build",
+		"cf:build": "bun run gql:generate && opennextjs-cloudflare build",
+		"cf:preview": "bun scripts/run-cloudflare.ts",
+		"cf:deploy": "opennextjs-cloudflare deploy",
+		"cf:upload": "opennextjs-cloudflare upload",
+		"cf:typegen": "wrangler types worker-configuration.d.ts --env-interface CloudflareEnv",
+		"start": "node node_modules/next/dist/bin/next start",
+		"lint": "eslint src scripts config.ts next.config.ts open-next.config.ts worker.ts eslint.config.mjs",
+		"css": "bun scripts/generate-vars.ts",
+		"gql:schema": "bun scripts/gql-tada.ts generate-schema \"$CRAFT_GRAPHQL_ENDPOINT\" --header \"Authorization: Bearer $CRAFT_GRAPHQL_TOKEN\" --output ./graphql/schema.graphql",
+		"gql:types": "bun scripts/gql-tada.ts generate-output --output ./src/graphql-env.d.ts",
+		"gql:check": "bun scripts/gql-tada.ts check",
+		"gql:generate": "bun run gql:schema && bun run gql:types",
+		"gql": "bun run gql:schema && bun run gql:types && bun run gql:check"
+	},
+	"dependencies": {
+		"clsx": "^2.1.1",
+		"embla-carousel-react": "^8.6.0",
+		"gql.tada": "^1.9.2",
+		"graphql": "^16.14.2",
+		"gsap": "^3.15.0",
+		"lenis": "^1.3.23",
+		"next": "16.2.9",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"sass": "^1.100.0",
+		"usehooks-ts": "^3.1.1",
+		"zustand": "^5.0.14",
+		"lucide-react": "^1.21.0"
+	},
+	"devDependencies": {
+		"@opennextjs/cloudflare": "1.20.2",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "16.2.9",
+		"pino": "^10.3.1",
+		"pino-pretty": "^13.1.3",
+		"typescript": "^5",
+		"wrangler": "4.125.0"
+	}
+}

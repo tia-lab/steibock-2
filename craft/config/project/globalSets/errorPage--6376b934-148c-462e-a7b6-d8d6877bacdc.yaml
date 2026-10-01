@@ -1,0 +1,62 @@
+fieldLayouts:
+  374305f5-1d4d-4c90-9051-79f080a6d368:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4660a8ef-7384-4e04-8d51-b1ed7a1ebeef # Error Page Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a38f63bc-b2ee-4d70-8b13-c75339fd0dcf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f1720845-8ddc-4032-bddc-1cd1eb098b56 # Text
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd226e80-3455-44d0-a3da-3293c4f87715
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 6f4fd0ee-dca6-41bc-9a7d-a027e3e1077f # Links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2b53f84-706c-4041-a533-dee38872ea0e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: eedbf41d-37f7-4daa-a7f1-b38164623980
+        userCondition: null
+    thumbFieldKey: null
+handle: errorPage
+name: 'Error Page'
+sortOrder: 24

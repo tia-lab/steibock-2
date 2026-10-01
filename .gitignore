@@ -1,0 +1,91 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js
+.next/
+out/
+app/.open-next/
+app/.wrangler/
+app/.dev.vars
+app/worker-configuration.d.ts
+next-env.d.ts
+
+# Build and cache artifacts
+dist/
+build/
+coverage/
+.turbo/
+.cache/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# GraphQL generated/introspection output
+graphql/schema.graphql
+src/graphql-env.d.ts
+app/graphql/schema.graphql
+app/src/graphql-env.d.ts
+
+# Craft backend runtime/secrets, if this starter includes /craft
+craft/.env
+craft/vendor/
+craft/storage/*
+!craft/storage/.gitkeep
+craft/config/license.key*
+craft/.ddev/.env.web
+craft/.ddev/traefik/config/*.yaml
+craft/.ddev/traefik/certs/*
+craft/web/cpresources/
+craft/web/assets/
+craft/web/uploads/
+craft/_backup-db/*.sql
+craft/_backup-db/*.sql.gz
+!craft/_backup-db/db.sql
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+
+# OS and editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Local certificates and keys
+*.pem
+*.key
+*.crt
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+tmp/
+
+# Serena files
+.serena
+
+# Other files
+.dev/
+.codex/
+docs/specs/
