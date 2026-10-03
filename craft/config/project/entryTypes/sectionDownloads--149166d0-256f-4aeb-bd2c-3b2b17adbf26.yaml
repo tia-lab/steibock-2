@@ -1,0 +1,70 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  60b9a2d4-e4c3-4a33-af21-d0d7cd0b4771:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 529aa4b8-af8f-4420-8db4-56fb1aa19bf2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 1b0314f0-f88d-4847-b954-dad1fa12cb2f # Downloads
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2077d2d-9d6c-4f83-a74f-55a84f17f55c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2eb564b4-6660-44ec-948f-377e0ecc49be
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionDownloads
+hasTitleField: true
+icon: download
+name: 'Sektion Downloads'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

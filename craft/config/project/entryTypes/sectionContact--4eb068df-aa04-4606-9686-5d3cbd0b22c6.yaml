@@ -41,14 +41,46 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: f1720845-8ddc-4032-bddc-1cd1eb098b56 # Text
+            fieldUid: c284b6a7-ad21-48f7-899c-c0a35b3fd207 # E-Mail
             handle: null
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 926559e2-47e8-42f9-ab48-00a093d628e7
+            uid: a41ce87d-14b1-47e9-b4c2-6f063a32e901
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 94611176-dc23-4b3b-b517-57ef2d20385c # Telefon
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf0bc610-547d-4eb3-8864-0b739273ad42
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: null
+            instructions: null
+            label: Standort-Titel
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56b99a73-92cd-4502-985e-4301c65e81d7
             userCondition: null
             warning: null
             width: 100
@@ -57,25 +89,42 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 8f90746f-df77-4301-8220-07d63cdbdd52 # Formular
+            fieldUid: 8276a78e-fefc-4592-89f9-dc8253802660 # Adresse
             handle: null
-            instructions: null
+            instructions: >-
+              Firma, Strasse und Ort jeweils auf einer eigenen Zeile.
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 04eac6d9-2a4d-4cdd-8a2f-67981e954410
+            uid: d2a33a8d-2ad7-42b8-b2c5-a1c912582fea
             userCondition: null
             warning: null
             width: 100
-        name: Content
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c84c691c-6219-41f3-91d7-55da471519ba # Button
+            handle: mapLink
+            instructions: null
+            label: Google-Maps-Link
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e65ac21-cb1e-4a1f-ae13-bd03e12089fb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
         uid: 9a10f844-d7c0-4138-9882-91c8f96a11af
         userCondition: null
     thumbFieldKey: null
 handle: sectionContact
 hasTitleField: true
-icon: envelope
-name: 'Sektion Contact'
+icon: address-book
+name: 'Sektion Kontakt'
 showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null

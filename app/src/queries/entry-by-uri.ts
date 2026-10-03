@@ -60,6 +60,53 @@ export const EntryByUriQuery = graphql(
 							html
 						}
 					}
+				... on job_Entry {
+					pageSeo {
+						...SeoFragment
+					}
+					jobCategories {
+						id
+						title
+					}
+					hero {
+						...AssetImageFragment
+					}
+					introText
+					richText {
+						html
+					}
+					button {
+						label
+						defaultLabel
+						url
+						target
+						entry {
+							uri
+						}
+					}
+					whatsApp {
+						label
+						defaultLabel
+						url
+						target
+						entry {
+							uri
+						}
+					}
+					contactPerson {
+						... on person_Entry {
+							id
+							firstName
+							lastName
+							role
+							email
+							phone
+							image {
+								...AssetImageFragment
+							}
+						}
+					}
+				}
 				... on collectionPage_Entry {
 					pageSeo {
 						...SeoFragment

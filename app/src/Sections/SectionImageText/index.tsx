@@ -46,9 +46,9 @@ export const SectionImageText = ({ section }: SectionComponentProps) => {
 					</div>
 					{image ? (
 						<div className={$.image_wrap}>
-							<ImageCraft image={image} className={$.image_bg} />
+							<ImageCraft image={image} className={$.image_bg} ratio='1:1' />
 							<div className={$.blur_bg} />
-							<ImageCraft image={image} className={$.image} />
+							<ImageCraft image={image} className={$.image} ratio='16:9' />
 						</div>
 					) : null}
 				</div>

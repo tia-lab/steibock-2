@@ -105,7 +105,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 9e1d51e8-e7ce-408c-909e-1443c45e91a5
+            fieldUid: 9e1d51e8-e7ce-408c-909e-1443c45e91a5 # Ausgewählte Teammitglieder
             handle: null
             instructions: null
             label: null
@@ -116,6 +116,22 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 29716da7-94cc-47fa-8027-fd6ad0431cfa # Team Variant
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6fc3ae31-8ef4-4c97-a337-efe991c28d0a
+            userCondition: null
+            warning: null
+            width: 50
         name: Inhalt
         uid: d15c0de0-0000-4000-8000-000000000053
         userCondition: null

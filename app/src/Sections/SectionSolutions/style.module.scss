@@ -1,0 +1,45 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section 0;
+
+	.content,
+	.list,
+	.answer {
+		display: flex;
+		flex-direction: column;
+		gap: $space-sm;
+	}
+
+	.filters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: $space-xs;
+
+		button {
+			padding: $space-xs $space-sm;
+			border: 1px solid $color-stroke;
+
+			&[aria-pressed='true'] {
+				color: $color-primary;
+				background: $color-accent;
+			}
+		}
+	}
+
+	.item {
+		padding: $space-sm 0;
+		border-bottom: 1px solid $color-stroke;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: $space-sm;
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+	}
+}

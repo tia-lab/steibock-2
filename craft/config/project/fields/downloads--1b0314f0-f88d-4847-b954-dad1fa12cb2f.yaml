@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: downloads
+instructions: null
+name: Downloads
+searchable: false
+settings:
+  createButtonLabel: 'Download hinzufügen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - cd4a40a1-4fca-4c6d-959d-b51dee9e836f # Download
+        -
+          - group
+          - Downloads
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

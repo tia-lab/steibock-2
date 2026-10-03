@@ -1,0 +1,48 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: 15rem 0 $space-section1;
+}
+
+.content {
+	grid-column: 2 / span 10;
+}
+
+.intro,
+.hero,
+.actions,
+.contacts {
+	margin-top: $space-md;
+}
+
+.hero {
+	width: 100%;
+}
+
+.actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $space-xs;
+}
+
+.contact {
+	display: flex;
+	gap: $space-sm;
+	margin-top: $space-sm;
+
+	a {
+		display: block;
+	}
+}
+
+.portrait {
+	width: 8rem;
+	height: 8rem;
+	object-fit: cover;
+}
+
+@media (width < 768px) {
+	.content {
+		grid-column: span 12;
+	}
+}

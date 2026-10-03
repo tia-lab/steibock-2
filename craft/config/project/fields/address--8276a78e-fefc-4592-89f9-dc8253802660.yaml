@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: address
 instructions: null
-name: Address
+name: Adresse
 searchable: false
 settings:
   byteLimit: null
@@ -9,7 +9,7 @@ settings:
   code: false
   initialRows: 4
   multiline: true
-  placeholder: null
+  placeholder: "Steibock AG\nGotthardstrasse 22\nCH–6472 Erstfeld"
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

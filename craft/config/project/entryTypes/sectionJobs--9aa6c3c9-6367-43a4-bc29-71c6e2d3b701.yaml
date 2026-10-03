@@ -1,0 +1,150 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  9aa6c3c9-6367-43a4-bc29-71c6e2d3b702:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b704
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b705
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ddb6fa2-895e-4cb8-a071-da27e99b0b4a # Maximale Anzahl
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b706
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: afcfeefb-37c5-467b-acb1-5c19ae4588ca # Einträge pro Seite
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b707
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 83e70c17-a574-4eb4-8f04-14f618cf155d # Sortierung
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b708
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 5cc28f85-2f23-4f60-a8c5-3d82afe9d301 # Ausgewählte Jobs
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b709
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9cc877aa-a693-456b-a957-8c786bc98713 # Kategorie-Filter anzeigen
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b710
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 9aa6c3c9-6367-43a4-bc29-71c6e2d3b703
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionJobs
+hasTitleField: true
+icon: briefcase
+name: 'Sektion Jobs'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

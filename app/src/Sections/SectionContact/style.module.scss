@@ -1,0 +1,54 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section 0;
+}
+
+.content {
+	@include content;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: $space-section2;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+	}
+}
+
+.block,
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+
+.block {
+	gap: $space-md;
+}
+
+.contact {
+	gap: $space-sm;
+
+	a {
+		font-family: $font-secondary;
+		font-size: 2.625rem;
+		font-weight: 250;
+		letter-spacing: 0.08em;
+		line-height: 1.15;
+		text-transform: uppercase;
+
+		@include mobile {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.address {
+	font-style: normal;
+	white-space: pre-line;
+}
+
+.map {
+	color: inherit;
+	text-decoration-color: $color-accent;
+	text-underline-offset: 0.35rem;
+}

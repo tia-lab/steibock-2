@@ -1,6 +1,7 @@
 import { EntryByUriQuery } from "@/queries";
 import type { ResultOf } from "gql.tada";
 import { CollectionTemplate } from "./Collection";
+import { JobTemplate } from "./Job";
 import { LegalTemplate } from "./Legal";
 import { NewsTemplate } from "./News";
 import { PageTemplate } from "./Page";
@@ -22,6 +23,8 @@ export const TemplateRouter = ({ entry }: Props) => {
       return <CollectionTemplate entry={entry} />;
     case "news_Entry":
       return <NewsTemplate entry={entry} />;
+    case "job_Entry":
+      return <JobTemplate entry={entry} />;
     default:
       return null;
   }

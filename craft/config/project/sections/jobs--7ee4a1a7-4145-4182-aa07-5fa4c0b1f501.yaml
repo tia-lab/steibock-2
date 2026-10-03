@@ -1,0 +1,19 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 6dd39096-3034-4071-a9d6-4e93bfa0e401 # Job
+handle: jobs
+maxAuthors: 1
+name: Jobs
+propagationMethod: all
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'jobs/{slug}'
+structure:
+  maxLevels: null
+  uid: 8ff5b2b8-5256-4293-ab18-60b5d1c2a601
+type: structure

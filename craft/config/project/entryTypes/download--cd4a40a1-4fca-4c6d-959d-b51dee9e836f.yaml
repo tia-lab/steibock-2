@@ -1,0 +1,42 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  051f4cda-589e-4ad9-b5a0-860f84d19ea3:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c84c691c-6219-41f3-91d7-55da471519ba # Button
+            handle: null
+            instructions: null
+            label: Download
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bcf591ad-3e17-4d61-b5aa-b74a68bf5f13
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: ad9bd5c9-2090-4f91-b380-d83e92c0cb24
+        userCondition: null
+    thumbFieldKey: null
+handle: download
+hasTitleField: false
+icon: download
+name: Download
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: Download
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: jobCategories
+instructions: null
+name: Job-Kategorien
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: false
+  source: 'group:2aa06d63-0d01-4d4e-b6a3-1b60edc7b101' # Job-Kategorien
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

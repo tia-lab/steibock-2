@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: solutionCategories
+instructions: null
+name: 'Lösung Kategorien'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: false
+  source: 'group:6db66595-1c9d-4510-9dba-d8004ddc9a0a' # Lösungen
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

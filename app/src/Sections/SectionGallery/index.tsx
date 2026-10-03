@@ -31,7 +31,7 @@ export const SectionGallery = ({ section }: SectionComponentProps) => {
 
 						return (
 							<figure className={$.slide} key={asset.id ?? index}>
-								<ImageCraft className={$.image} image={image} />
+								<ImageCraft className={$.image} image={image} ratio='16:9' />
 								{asset.title ? (
 									<figcaption className={clsx('text-small', $.caption)}>
 										{asset.title}

@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: phone
 instructions: null
-name: Phone
+name: Telefon
 searchable: false
 settings:
   byteLimit: null
@@ -9,7 +9,7 @@ settings:
   code: false
   initialRows: 1
   multiline: false
-  placeholder: null
+  placeholder: '+41 41 882 03 03'
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

@@ -1,0 +1,76 @@
+@use '../../styles/export.scss' as *;
+
+.section {
+	padding: $space-section1 0;
+}
+
+.head,
+.list,
+.filters,
+.pagination {
+	grid-column: span 12;
+}
+
+.head {
+	margin-bottom: $space-md;
+}
+
+.filters,
+.pagination {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $space-xs;
+
+	button {
+		padding: 0.65rem 1rem;
+		border: 1px solid currentColor;
+		background: transparent;
+		cursor: pointer;
+	}
+
+	button[aria-pressed='true'],
+	button[aria-current='page'] {
+		color: $color-white;
+		background: $color-black;
+	}
+}
+
+.filters {
+	margin-bottom: $space-md;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: $space-sm;
+}
+
+.job {
+	display: grid;
+	grid-template-columns: minmax(8rem, 12rem) 1fr;
+	gap: $space-sm;
+	padding: $space-sm;
+	border: 1px solid currentColor;
+	color: inherit;
+	text-decoration: none;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.categories {
+	margin-bottom: $space-xs;
+}
+
+.pagination {
+	margin-top: $space-md;
+}
+
+@media (width < 768px) {
+	.list {
+		grid-template-columns: 1fr;
+	}
+}

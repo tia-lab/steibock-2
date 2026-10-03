@@ -1,5 +1,6 @@
 export * from "./get-entry-by-uri";
 export * from "./get-globals";
+export * from "./get-jobs";
 export * from "./get-navigation";
 export * from "./get-news";
 export * from './get-service-areas'

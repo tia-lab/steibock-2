@@ -18,6 +18,11 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 4rem;
 
+		&.text_list {
+			grid-template-columns: 1fr;
+			gap: 0;
+		}
+
 		.column {
 			display: flex;
 			flex-direction: column;

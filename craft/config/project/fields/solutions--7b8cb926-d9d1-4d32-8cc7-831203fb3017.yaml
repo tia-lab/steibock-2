@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: solutions
+instructions: null
+name: Lösungen
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - cd7d954f-17cf-4b9a-9730-72ab68a5366e # Lösung
+        -
+          - group
+          - Lösungen
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

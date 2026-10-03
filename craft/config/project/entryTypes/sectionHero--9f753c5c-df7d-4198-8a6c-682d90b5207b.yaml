@@ -41,6 +41,22 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
+            fieldUid: d24f8e9a-7a2a-4f90-9a19-3b5b8ad4a612 # Hero title
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000084
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
             fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
             handle: null
             instructions: null
@@ -57,14 +73,14 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: fe1e327f-f713-41a4-8ed3-eaac7c941b7b # Bild
+            fieldUid: 7de1aa36-fe1f-4d28-b98e-4d1e7123d0e9 # Rich Text
             handle: null
             instructions: null
-            label: null
-            required: true
+            label: Text
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d15c0de0-0000-4000-8000-000000000072
+            uid: d15c0de0-0000-4000-8000-000000000075
             userCondition: null
             warning: null
             width: 100
@@ -73,17 +89,17 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: cb563646-b4df-4e2b-b714-0441a1e8e96e
+            fieldUid: c84c691c-6219-41f3-91d7-55da471519ba # Button
             handle: null
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d15c0de0-0000-4000-8000-000000000073
+            uid: d15c0de0-0000-4000-8000-000000000076
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             dateAdded: null
             editCondition: null
@@ -99,9 +115,79 @@ fieldLayouts:
             uid: d15c0de0-0000-4000-8000-000000000074
             userCondition: null
             warning: null
-            width: 50
+            width: 100
         name: Inhalt
         uid: d15c0de0-0000-4000-8000-000000000078
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b14f8e9a-7a2a-4f90-9a19-3b5b8ad4a611 # Callout anzeigen
+            handle: null
+            instructions: 'Aktivieren, um den optionalen Callout anzuzeigen.'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000077
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: calloutTitle
+            instructions: null
+            label: 'Callout title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000080
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: calloutSubtitle
+            instructions: null
+            label: 'Callout subtitle'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000081
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c84c691c-6219-41f3-91d7-55da471519ba # Button
+            handle: calloutLink
+            instructions: null
+            label: 'Callout link'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d15c0de0-0000-4000-8000-000000000082
+            userCondition: null
+            warning: null
+            width: 100
+        name: Callout
+        uid: d15c0de0-0000-4000-8000-000000000083
         userCondition: null
     thumbFieldKey: null
 handle: sectionHero

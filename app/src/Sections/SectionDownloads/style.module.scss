@@ -1,0 +1,9 @@
+@use '../../styles/export.scss' as *;
+
+.content,
+.list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: $space-sm;
+}

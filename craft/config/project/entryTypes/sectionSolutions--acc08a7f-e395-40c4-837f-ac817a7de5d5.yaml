@@ -1,0 +1,86 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  b92ddb9d-bec6-4863-ac6b-e8e33fa59d94:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 17f8793c-3a96-451e-acbc-319e0646ff55
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9cc877aa-a693-456b-a957-8c786bc98713 # Kategorie-Filter anzeigen
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4e05ad6d-d37e-4296-86b6-a8df4a440b34
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7b8cb926-d9d1-4d32-8cc7-831203fb3017 # Lösungen
+            handle: null
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d30b4e1-bc3e-48e5-b0a2-10e1c2874864
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 1cbe3f50-1300-4d98-8617-dc850433886d
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionSolutions
+hasTitleField: true
+icon: lightbulb
+name: 'Sektion Lösungen'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

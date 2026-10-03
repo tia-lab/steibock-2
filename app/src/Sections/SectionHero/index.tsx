@@ -1,65 +1,90 @@
-import { config } from '$/config'
-import { Anim, Container, ImageCraft, Parallax, Wrapper } from '@/Components'
+import { Button, Container, RichText, Wrapper } from '@/Components'
+import { pathFromCraftUri } from '@/lib/craft/preview'
 import { RenderableSectionFragment } from '@/queries'
-import type { FragmentOf } from 'gql.tada'
+import clsx from 'clsx'
 import { readFragment } from 'gql.tada'
+import { ArrowRight } from 'lucide-react'
+import type { SectionComponentProps } from '../SectionRouter'
 import $ from './style.module.scss'
 
-interface SectionHeroProps extends React.HTMLAttributes<HTMLElement> {
-	section?: FragmentOf<typeof RenderableSectionFragment> | null
-	fallbackTitle?: string | null
-}
+const buttonTarget = (target?: string | null) =>
+	target === '_blank' ? '_blank' : '_self'
 
-export const SectionHero = ({
-	section,
-	fallbackTitle,
-	style,
-	...props
-}: SectionHeroProps) => {
-	const data = section ? readFragment(RenderableSectionFragment, section) : null
+const renderTitle = (line: string) =>
+	line.split(/(<b>.*?<\/b>)/gi).map((part, index) =>
+		/^<b>.*<\/b>$/i.test(part) ? (
+			<b key={index}>{part.slice(3, -4)}</b>
+		) : (
+			part
+		)
+	)
 
-	if (data?.__typename !== 'sectionHero_Entry') {
-		return null
-	}
+export const SectionHero = ({ section }: SectionComponentProps) => {
+	const data = readFragment(RenderableSectionFragment, section)
 
-	const imageRef = data.image[0] ?? null
-	const title = data.title || fallbackTitle
+	if (data.__typename !== 'sectionHero_Entry') return null
+
+	const buttonHref = data.button?.entry?.uri
+		? pathFromCraftUri(data.button.entry.uri)
+		: data.button?.url
+	const calloutHref = data.calloutLink?.entry?.uri
+		? pathFromCraftUri(data.calloutLink.entry.uri)
+		: data.calloutLink?.url
+	const titleLines = (data.heroTitle || data.title || '')
+		.split(/\r?\n|<\/br>/i)
+		.map((line) => line.trim())
+		.filter(Boolean)
 
 	return (
-		<section className={$.section} style={style} {...props}>
+		<section
+			data-section-id={data.id ?? undefined}
+			data-section-type={data.typeHandle ?? undefined}
+			className={clsx($.section, { [$.home]: data.isHomePage })}>
 			<Wrapper>
 				<Container>
+					<div className={$.title}>
+						{titleLines.map((line, index) => (
+							<h1 key={index}>{renderTitle(line)}</h1>
+						))}
+					</div>
 					<div className={$.content}>
-						{title ? (
-							<Anim.h1 type='fade-up' className='title-jumbo'>
-								{title}
-							</Anim.h1>
-						) : null}
-						{data.subtitle ? (
-							<Anim.p
-								type='fade-up'
-								className='title-h3'
-								vars={{ delay: config.animation.short / 1.5 }}>
-								{data.subtitle}
-							</Anim.p>
+						{data.subtitle ? <p className='text-lead'>{data.subtitle}</p> : null}
+						<RichText html={data.richText?.html} className={$.richText} />
+						{buttonHref ? (
+							<Button
+								variant='text'
+								className={$.button}
+								href={buttonHref}
+								nextJs={Boolean(data.button?.entry?.uri)}
+								target={buttonTarget(data.button?.target)}
+								icon={<ArrowRight />}>
+								{data.button?.label ?? data.button?.defaultLabel ?? buttonHref}
+							</Button>
 						) : null}
 					</div>
+					{data.showCallout ? (
+						<aside className={$.callout} aria-label={data.calloutTitle ?? 'Callout'}>
+							{data.calloutTitle ? <h2 className='title-h4'>{data.calloutTitle}</h2> : null}
+							{data.calloutSubtitle ? (
+								<p className='text-lead'>{data.calloutSubtitle}</p>
+							) : null}
+							{calloutHref ? (
+								<Button
+									variant='text'
+									className={$.button}
+									href={calloutHref}
+									nextJs={Boolean(data.calloutLink?.entry?.uri)}
+									target={buttonTarget(data.calloutLink?.target)}
+									icon={<ArrowRight />}>
+									{data.calloutLink?.label ??
+										data.calloutLink?.defaultLabel ??
+										calloutHref}
+								</Button>
+							) : null}
+						</aside>
+					) : null}
 				</Container>
 			</Wrapper>
-			<Parallax.div
-				className={$.image}
-				speed={2}
-				fromVars={{ yPercent: -15, scale: 1.12 }}
-				vars={{ yPercent: 10, scale: 1.04 }}>
-				<ImageCraft
-					image={imageRef}
-					className={$.image_media}
-					sizes='100vw'
-					loading='eager'
-					fetchPriority='high'
-				/>
-			</Parallax.div>
-			<div className={$.image_overlay} />
 		</section>
 	)
 }

@@ -1,5 +1,6 @@
 import { graphql } from '@/lib/craft/graphql'
 import { AssetImageFragment, AssetUrlFragment } from './asset'
+import { FreeformFormFragment } from './freeform'
 
 export const RenderableSectionFragment = graphql(
 	`
@@ -9,9 +10,32 @@ export const RenderableSectionFragment = graphql(
 				id
 				title
 				typeHandle
+				heroTitle
 				subtitle
-				image {
-					...AssetImageFragment
+				richText {
+					html
+				}
+				button {
+					label
+					defaultLabel
+					url
+					target
+					entry {
+						uri
+					}
+				}
+				isHomePage
+				showCallout
+				calloutTitle
+				calloutSubtitle
+				calloutLink {
+					label
+					defaultLabel
+					url
+					target
+					entry {
+						uri
+					}
 				}
 			}
 			... on sectionLinks_Entry {
@@ -40,6 +64,33 @@ export const RenderableSectionFragment = graphql(
 							title
 						}
 						image {
+							...AssetImageFragment
+						}
+					}
+				}
+			}
+			... on sectionJobs_Entry {
+				id
+				title
+				typeHandle
+				subtitle
+				itemsLimit
+				itemsPerPage
+				orderBy
+				showCategoryFilters
+				selectedJobs {
+					... on job_Entry {
+						__typename
+						id
+						title
+						uri
+						postDate
+						introText
+						jobCategories {
+							id
+							title
+						}
+						hero {
 							...AssetImageFragment
 						}
 					}
@@ -108,6 +159,7 @@ export const RenderableSectionFragment = graphql(
 				itemsLimit
 				itemsPerPage
 				orderBy
+				teamVariant
 				selectedTeam {
 					... on person_Entry {
 						__typename
@@ -144,10 +196,68 @@ export const RenderableSectionFragment = graphql(
 					...AssetImageFragment
 				}
 			}
+			... on sectionDownloads_Entry {
+				id
+				title
+				typeHandle
+				downloads {
+					... on download_Entry {
+						__typename
+						id
+						button {
+							label
+							defaultLabel
+							url
+							target
+							download
+							filename
+							asset {
+								title
+							}
+							entry {
+								uri
+							}
+						}
+					}
+				}
+			}
 			... on sectionFaqs_Entry {
 				id
 				title
 				typeHandle
+				button {
+					label
+					defaultLabel
+					url
+					target
+					entry {
+						uri
+					}
+				}
+				faqs {
+					... on faq_Entry {
+						__typename
+						id
+						title
+						richText {
+							html
+						}
+					}
+				}
+			}
+			... on sectionServices_Entry {
+				id
+				title
+				typeHandle
+				button {
+					label
+					defaultLabel
+					url
+					target
+					entry {
+						uri
+					}
+				}
 				accordions {
 					... on accordion_Entry {
 						__typename
@@ -163,15 +273,45 @@ export const RenderableSectionFragment = graphql(
 					}
 				}
 			}
-			... on sectionAccordions_Entry {
+			... on sectionContact_Entry {
 				id
 				title
 				typeHandle
-				accordions {
-					... on accordion_Entry {
+				email
+				phone
+				subtitle
+				address
+				mapLink {
+					label
+					url
+					target
+				}
+			}
+			... on sectionForm_Entry {
+				id
+				title
+				typeHandle
+				richText {
+					html
+				}
+				form {
+					...FreeformFormFragment
+				}
+			}
+			... on sectionSolutions_Entry {
+				id
+				title
+				typeHandle
+				showCategoryFilters
+				solutions {
+					... on solution_Entry {
 						__typename
 						id
 						title
+						solutionCategories {
+							id
+							title
+						}
 						subtitle
 						richText {
 							html
@@ -184,7 +324,7 @@ export const RenderableSectionFragment = graphql(
 			}
 		}
 	`,
-	[AssetImageFragment, AssetUrlFragment]
+	[AssetImageFragment, AssetUrlFragment, FreeformFormFragment]
 )
 
 export const SectionFragment = graphql(

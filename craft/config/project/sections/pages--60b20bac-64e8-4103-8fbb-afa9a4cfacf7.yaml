@@ -8,8 +8,6 @@ entryTypes:
   -
     uid: 8525435f-ca62-40f9-ab52-df87683f66e9 # Rechtliche Seite
   -
-    uid: 0b8df5cf-1029-4a2b-b145-20a506dc9111 # Formularseite
-  -
     uid: 21f2a877-fb2a-49eb-967f-086498772f8f # Einsatzbereich
 handle: pages
 maxAuthors: 1
@@ -18,7 +16,8 @@ previewTargets:
   -
     label: 'Next Preview'
     refresh: '1'
-    urlFormat: '$NEXT_PUBLIC_SITE_URL/api/preview?uri={uri}&secret=${CRAFT_PREVIEW_SECRET}'
+    urlFormat: >-
+      $NEXT_PUBLIC_SITE_URL/api/preview?uri={uri}&secret=${CRAFT_PREVIEW_SECRET}
 propagationMethod: all
 siteSettings:
   1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next

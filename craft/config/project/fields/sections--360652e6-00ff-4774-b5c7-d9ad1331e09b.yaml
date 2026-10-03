@@ -12,7 +12,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 9f753c5c-df7d-4198-8a6c-682d90b5207b # Hero
+          - 9f753c5c-df7d-4198-8a6c-682d90b5207b # Sektion Hero
         -
           - group
           - Abschnitte
@@ -20,7 +20,7 @@ settings:
       __assoc__:
         -
           - uid
-          - ea7711c0-082d-49aa-8f14-34cd09e26971 # Links
+          - ea7711c0-082d-49aa-8f14-34cd09e26971 # Sektion Links
         -
           - group
           - Abschnitte
@@ -28,7 +28,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # News
+          - 597f5647-6a7f-43ea-ad1c-d9d5fcbd521e # Sektion News
         -
           - group
           - Abschnitte
@@ -36,7 +36,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 7c737252-7285-4d65-a8f6-b76210703803 # Projekte
+          - 9aa6c3c9-6367-43a4-bc29-71c6e2d3b701 # Sektion Jobs
         -
           - group
           - Abschnitte
@@ -44,7 +44,7 @@ settings:
       __assoc__:
         -
           - uid
-          - c4d09126-00dc-4403-8c84-15a5ac6c64c6 # Video
+          - 7c737252-7285-4d65-a8f6-b76210703803 # Sektion Projekte
         -
           - group
           - Abschnitte
@@ -52,7 +52,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 7e505d85-bd8b-4d86-b890-1a02a9d5a33a # Bild + Text
+          - c4d09126-00dc-4403-8c84-15a5ac6c64c6 # Sektion Video
         -
           - group
           - Abschnitte
@@ -60,7 +60,7 @@ settings:
       __assoc__:
         -
           - uid
-          - f050a072-2f76-4fc1-b93c-fc7d800db88c # Team
+          - e6ad4f7c-29a1-4cf4-b9ab-42a2ee8b2f10
         -
           - group
           - Abschnitte
@@ -68,7 +68,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 4ac60b82-89d9-42ae-ad0b-884ab8df3278 # Team CTA
+          - 7e505d85-bd8b-4d86-b890-1a02a9d5a33a # Sektion Bild + Text
         -
           - group
           - Abschnitte
@@ -76,7 +76,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 30d36682-9062-4519-928a-2973860c5b8e # Galerie
+          - f050a072-2f76-4fc1-b93c-fc7d800db88c # Sektion Team
         -
           - group
           - Abschnitte
@@ -84,7 +84,7 @@ settings:
       __assoc__:
         -
           - uid
-          - 85354831-bb1a-40cb-a459-2da5f0b152bf # Akkordeons
+          - 4ac60b82-89d9-42ae-ad0b-884ab8df3278 # Sektion Team CTA
         -
           - group
           - Abschnitte
@@ -92,7 +92,7 @@ settings:
       __assoc__:
         -
           - uid
-          - d35dadd8-6e27-42e3-88e7-1d6ed433c366 # FAQs
+          - 30d36682-9062-4519-928a-2973860c5b8e # Sektion Galerie
         -
           - group
           - Abschnitte
@@ -100,7 +100,55 @@ settings:
       __assoc__:
         -
           - uid
-          - 5147bb63-fa86-4731-90e9-5318e582d79d # Geschichte
+          - 85354831-bb1a-40cb-a459-2da5f0b152bf # Sektion Services
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - acc08a7f-e395-40c4-837f-ac817a7de5d5 # Sektion Lösungen
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - d35dadd8-6e27-42e3-88e7-1d6ed433c366 # Sektion FAQs
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 149166d0-256f-4aeb-bd2c-3b2b17adbf26 # Sektion Downloads
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 5147bb63-fa86-4731-90e9-5318e582d79d # Sektion Geschichte
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 4eb068df-aa04-4606-9686-5d3cbd0b22c6 # Sektion Kontakt
+        -
+          - group
+          - Abschnitte
+    -
+      __assoc__:
+        -
+          - uid
+          - 6f4a2b9c-7d31-4e88-a5c0-2f91d3b74610 # Sektion Formular
         -
           - group
           - Abschnitte

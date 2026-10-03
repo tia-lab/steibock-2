@@ -41,7 +41,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: f1cd7cb0-48a1-4e28-81f5-a40fd957819c # Akkordeons
+            fieldUid: 5f5a06c4-2f53-48c0-9dc7-e5dd75b0033f # FAQs
             handle: null
             instructions: null
             label: null
@@ -49,6 +49,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 5366d64c-2bb3-4471-8ec8-9f2864df13bd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c84c691c-6219-41f3-91d7-55da471519ba # Button
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd89bab3-effb-4d73-855e-db91caa42518
             userCondition: null
             warning: null
             width: 100

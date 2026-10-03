@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: email
 instructions: null
-name: Email
+name: E-Mail
 searchable: false
 settings:
   byteLimit: null
@@ -9,7 +9,7 @@ settings:
   code: false
   initialRows: 1
   multiline: false
-  placeholder: null
+  placeholder: info@steibock-ag.ch
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

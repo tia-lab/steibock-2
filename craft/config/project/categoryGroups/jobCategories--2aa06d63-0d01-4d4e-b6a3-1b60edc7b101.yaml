@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  2aa06d63-0d01-4d4e-b6a3-1b60edc7b103:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 2aa06d63-0d01-4d4e-b6a3-1b60edc7b105
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 2aa06d63-0d01-4d4e-b6a3-1b60edc7b104
+        userCondition: null
+    thumbFieldKey: null
+handle: jobCategories
+name: Job-Kategorien
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 2aa06d63-0d01-4d4e-b6a3-1b60edc7b102

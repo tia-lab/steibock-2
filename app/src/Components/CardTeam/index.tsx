@@ -26,17 +26,18 @@ export type CardTeamEntry = Extract<
 
 interface CardTeamProps extends React.HTMLAttributes<HTMLElement> {
 	entry: CardTeamEntry
+	variant?: 'list' | 'textList'
 }
 
-export const CardTeam = ({ entry, className }: CardTeamProps) => {
+export const CardTeam = ({ entry, className, variant = 'list' }: CardTeamProps) => {
 	const name =
 		[entry.firstName, entry.lastName].filter(Boolean).join(' ') || entry.title
 
 	return (
-		<article className={clsx($.card, className)}>
-			{entry.image?.[0] ? (
+		<article className={clsx($.card, className)} data-variant={variant}>
+			{variant === 'list' && entry.image?.[0] ? (
 				<div className={$.image_wrap}>
-					<ImageCraft image={entry.image[0]} className={$.image} />
+					<ImageCraft image={entry.image[0]} className={$.image} ratio='1:1' />
 					<div className={$.image_overlay} />
 				</div>
 			) : null}

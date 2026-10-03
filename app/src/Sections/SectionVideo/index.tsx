@@ -103,6 +103,7 @@ export const SectionVideo = ({ section }: SectionComponentProps) => {
 								className={$.image}
 								image={image}
 								data-bg
+								ratio='16:9'
 							/>
 							<div className={$.overlay} />
 						</div>

@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: teamVariant
+instructions: null
+name: 'Team Variant'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - List
+        -
+          - value
+          - list
+        -
+          - default
+          - true
+    -
+      __assoc__:
+        -
+          - label
+          - 'Text list'
+        -
+          - value
+          - textList
+        -
+          - default
+          - false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

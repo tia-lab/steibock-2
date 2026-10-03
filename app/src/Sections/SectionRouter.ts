@@ -7,12 +7,17 @@ import {
 import { RenderableSectionFragment, SectionFragment } from '@/queries'
 import type { FragmentOf } from 'gql.tada'
 import { readFragment } from 'gql.tada'
-import { SectionAccordions } from './SectionAccordions'
+import { SectionContact } from './SectionContact'
+import { SectionDownloads } from './SectionDownloads'
+import { SectionForm } from './SectionForm'
+import { SectionServices } from './SectionServices'
+import { SectionSolutions } from './SectionSolutions'
 import { SectionFaqs } from './SectionFaqs'
 import { SectionGallery } from './SectionGallery'
 import { SectionHero } from './SectionHero'
 import { SectionHistory } from './SectionHistory'
 import { SectionImageText } from './SectionImageText'
+import { SectionJobs } from './SectionJobs'
 import { SectionLinks } from './SectionLinks'
 import { SectionNews } from './SectionNews'
 import { SectionProjects } from './SectionProjects'
@@ -37,6 +42,7 @@ const sectionComponents: Record<string, SectionComponent> = {
 	sectionHero_Entry: SectionHero,
 	sectionLinks_Entry: SectionLinks,
 	sectionNews_Entry: SectionNews,
+	sectionJobs_Entry: SectionJobs,
 	sectionProjects_Entry: SectionProjects,
 	sectionVideo_Entry: SectionVideo,
 	sectionImageText_Entry: SectionImageText,
@@ -44,8 +50,12 @@ const sectionComponents: Record<string, SectionComponent> = {
 	sectionTeam_Entry: SectionTeam,
 	sectionTeamCta_Entry: SectionTeamCta,
 	sectionGallery_Entry: SectionGallery,
+	sectionContact_Entry: SectionContact,
+	sectionForm_Entry: SectionForm,
+	sectionDownloads_Entry: SectionDownloads,
 	sectionFaqs_Entry: SectionFaqs,
-	sectionAccordions_Entry: SectionAccordions
+	sectionServices_Entry: SectionServices,
+	sectionSolutions_Entry: SectionSolutions
 }
 
 const renderSection = (

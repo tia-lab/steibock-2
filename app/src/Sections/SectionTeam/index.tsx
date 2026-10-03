@@ -48,8 +48,10 @@ export const SectionTeam = async ({ section }: SectionComponentProps) => {
 
 	if (!people.length) return null
 
-	const columns = [0, 1, 2].map((columnIndex) =>
-		people.filter((_, index) => index % 3 === columnIndex)
+	const variant = data.teamVariant === 'textList' ? 'textList' : 'list'
+	const columnCount = variant === 'textList' ? 1 : 3
+	const columns = Array.from({ length: columnCount }, (_, columnIndex) =>
+		people.filter((_, index) => index % columnCount === columnIndex)
 	)
 	const titleLines = data.title
 		? data.title.split('</br>').map((line) => line.trim())
@@ -62,6 +64,7 @@ export const SectionTeam = async ({ section }: SectionComponentProps) => {
 			data-items-limit={data.itemsLimit ?? undefined}
 			data-items-per-page={data.itemsPerPage ?? undefined}
 			data-order-by={data.orderBy ?? undefined}
+			data-team-variant={variant}
 			className={$.section}>
 			<Wrapper>
 				<Container>
@@ -75,11 +78,11 @@ export const SectionTeam = async ({ section }: SectionComponentProps) => {
 						))}
 						{data.subtitle ? <p>{data.subtitle}</p> : null}
 					</div>
-					<div className={$.grid}>
+					<div className={clsx($.grid, variant === 'textList' && $.text_list)}>
 						{columns.map((column, columnIndex) => (
 							<div className={$.column} key={columnIndex}>
 								{column.map((person) => (
-									<CardTeam key={person.id ?? person.title} entry={person} />
+									<CardTeam key={person.id ?? person.title} entry={person} variant={variant} />
 								))}
 							</div>
 						))}

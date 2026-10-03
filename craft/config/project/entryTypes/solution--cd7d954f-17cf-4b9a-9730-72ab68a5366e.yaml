@@ -1,0 +1,118 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  2836a026-5483-4402-ac93-ed22de7ec032:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 25804079-efc4-47e3-969b-38b59647fa85
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: b61bc166-4d42-4e4a-a3a8-56d8ad9f6d89 # Lösung Kategorien
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c101bcd0-60ce-4cad-a02d-e0b53898dd01
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3af62cab-8b90-42ca-b80f-cd57a4fca5d5 # Untertitel
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d308bad-23eb-4cd7-9072-3982a41a0fb0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7de1aa36-fe1f-4d28-b98e-4d1e7123d0e9 # Rich Text
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09aef239-3ff9-4d0c-895d-bec015ba36ad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 80baf906-2e2a-4cc1-a5bb-55c69c30f7dd # Galerie
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56e46875-caf4-4bfc-a026-7c1ea8ca1e70
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 44cbf7cb-ac09-47bf-bfc3-b83d61c233f7
+        userCondition: null
+    thumbFieldKey: null
+handle: solution
+hasTitleField: true
+icon: lightbulb
+name: Lösung
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,0 +1,188 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  6dd39096-3034-4071-a9d6-4e93bfa0e402:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e404
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4bb17e74-1e12-4e5f-a7b4-2c71fed8c201 # Job-Kategorien
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e405
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: fe1e327f-f713-41a4-8ed3-eaac7c941b7b # Bild
+            handle: hero
+            instructions: null
+            label: Hero
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e406
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 401dc823-8405-4c21-b627-b8bb67fbe474 # Introtext
+            handle: introText
+            instructions: null
+            label: Introtext
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e407
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7de1aa36-fe1f-4d28-b98e-4d1e7123d0e9 # Rich Text
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e408
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c84c691c-6219-41f3-91d7-55da471519ba # Button
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e409
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c84c691c-6219-41f3-91d7-55da471519ba # Button
+            handle: whatsApp
+            instructions: null
+            label: WhatsApp
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e410
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9e1d51e8-e7ce-408c-909e-1443c45e91a5 # Ausgewählte Teammitglieder
+            handle: contactPerson
+            instructions: null
+            label: Ansprechpartner
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e411
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 6dd39096-3034-4071-a9d6-4e93bfa0e403
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a471e9be-fe4f-4c4e-9088-abd5a9e070a7 # Page SEO
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dd39096-3034-4071-a9d6-4e93bfa0e413
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 6dd39096-3034-4071-a9d6-4e93bfa0e412
+        userCondition: null
+    thumbFieldKey: null
+handle: job
+hasTitleField: true
+icon: briefcase
+name: Job
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

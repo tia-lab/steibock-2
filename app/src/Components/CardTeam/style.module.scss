@@ -41,4 +41,16 @@
 		gap: 1rem;
 		justify-content: flex-end;
 	}
+
+	&[data-variant='textList'] {
+		flex-direction: row;
+		align-items: center;
+		padding: $space-sm 0;
+		border-bottom: 1px solid $color-stroke;
+
+		.contact {
+			width: auto;
+			margin-left: auto;
+		}
+	}
 }

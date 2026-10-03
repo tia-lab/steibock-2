@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  5f1dd8bb-9557-479f-80b9-c95828703510:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 55528f07-d33e-4edf-b5f5-f841a4010247
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: e2215916-6d3a-47ba-95d7-f036cc23a730
+        userCondition: null
+    thumbFieldKey: null
+handle: solutions
+name: Lösungen
+siteSettings:
+  1f9dcaf3-3f9d-4e81-996d-7bb1aefe81c8: # Ubiq Next
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 90bcf3fe-9e1b-4b3b-a45e-aed61bd3a03e
